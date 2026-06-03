@@ -10,7 +10,7 @@ const checklistData = {
     "Biglietti aerei TAP Portugal su cellulare"
   ],
   parks: [
-    "Scaricare mappe offline di Google Maps (5 stati USA)",
+    "Scaricare mappe offline di Google Maps (4 stati USA)",
     "Scaricare l'App ufficiale NPS (Parchi Nazionali)",
     "Acquistare scorte d'acqua importanti per l'auto",
     "Crema solare 50+ e cappelli a tesa larga",
