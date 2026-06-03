@@ -1,0 +1,17 @@
+{
+  "name": "California On The Road 2026",
+  "short_name": "CA Road Trip",
+  "description": "Itinerario di 20 giorni attraverso California, Nevada, Utah e Arizona",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fdfbf7",
+  "theme_color": "#3d405b",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

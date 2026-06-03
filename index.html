@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>California On The Road 2026 — Itinerario di Viaggio</title>
+  <meta name="description" content="Road trip di 20 giorni: California, Nevada, Utah e Arizona. Itinerario interattivo con Google Maps.">
+  <link rel="icon" href="icon.png" type="image/png">
+  <meta name="theme-color" content="#3d405b">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fdfbf7;color:#3d405b;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:64px}
+    a{color:#e07a5f;text-decoration:none}
+    a:hover{color:#3d405b}
+    .container{max-width:768px;margin:0 auto;padding:0 12px}
+    
+    /* Hero */
+    .hero{position:relative;overflow:hidden;background:#3d405b;min-height:240px;max-height:45vh;display:flex;align-items:center;justify-content:center}
+    .hero-text{position:relative;z-index:2;text-align:center;color:#fff;padding:24px}
+    .hero-text h1{font-size:1.5rem;font-weight:800;font-family:Georgia,serif;font-style:italic;text-shadow:0 2px 8px rgba(0,0,0,0.5)}
+    .hero-text p{font-size:0.8rem;opacity:0.9;font-family:Georgia,serif;font-style:italic;margin-top:4px}
+    
+    /* Tab bar */
+    .tab-bar{display:flex;background:#fbf8f3;border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,0.08);border:1px solid #f0ece3;padding:8px;gap:6px;margin:12px}
+    .tab-btn{flex:1;padding:10px 6px;border-radius:12px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;text-align:center;border:none;cursor:pointer;background:transparent;color:#999;transition:all .2s;line-height:1.3}
+    .tab-btn.active{background:#3d405b;color:#fff;box-shadow:0 2px 8px rgba(61,64,91,0.3)}
+    .tab-btn:hover:not(.active){background:#f5f0e6;color:#555}
+    
+    /* Bottom nav */
+    .bottom-nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #f5f0e6;box-shadow:0 -2px 10px rgba(0,0,0,0.06);z-index:50;display:flex}
+    .nav-btn{flex:1;padding:6px 2px 5px;text-align:center;font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;color:#aaa;border:none;background:none;cursor:pointer}
+    .nav-btn.active{color:#e07a5f}
+    .nav-btn .nav-icon{font-size:1.1rem;display:block;margin-bottom:1px}
+    
+    /* HOME TAB */
+    .home-section{margin-bottom:16px}
+    .home-desc{font-size:0.85rem;line-height:1.7;color:#555;margin-bottom:16px;padding:0 4px}
+    .home-desc strong{color:#3d405b}
+    .home-phases{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+    .home-phase{display:flex;align-items:center;gap:10px;background:#fff;border-radius:12px;padding:10px 12px;border:1px solid #f5f0e6;box-shadow:0 1px 3px rgba(0,0,0,0.04);cursor:pointer;transition:transform .15s}
+    .home-phase:active{transform:scale(0.98)}
+    .home-phase-icon{font-size:1.5rem;flex-shrink:0}
+    .home-phase-text{flex:1;min-width:0}
+    .home-phase-title{font-size:0.8rem;font-weight:700;color:#3d405b}
+    .home-phase-sub{font-size:0.7rem;color:#888}
+    .home-phase-arrow{color:#ccc;font-size:1.2rem}
+    
+    /* Phase pills */
+    .phase-pills{display:flex;gap:6px;overflow-x:auto;padding:0 12px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .phase-pills::-webkit-scrollbar{display:none}
+    .phase-pill{flex-shrink:0;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:700;border:1px solid #f5f0e6;background:#fff;color:#666;cursor:pointer;transition:all .2s;white-space:nowrap}
+    .phase-pill.active{color:#fff;border-color:transparent;transform:scale(1.05)}
+    
+    /* Day grid — iosi style */
+    .day-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 12px;margin-bottom:12px}
+    .day-tile{position:relative;border-radius:14px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;box-shadow:0 2px 6px rgba(0,0,0,0.1);transition:transform .15s,box-shadow .15s}
+    .day-tile:active{transform:scale(0.97);box-shadow:0 1px 3px rgba(0,0,0,0.12)}
+    .day-tile-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .3s}
+    .day-tile:hover .day-tile-bg{transform:scale(1.05)}
+    .day-tile-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.15) 50%,rgba(0,0,0,0.05) 100%)}
+    .day-tile-content{position:absolute;bottom:0;left:0;right:0;padding:10px 12px;z-index:2}
+    .day-tile-num{font-size:10px;font-weight:800;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:0.5px}
+    .day-tile-title{font-size:13px;font-weight:800;color:#fff;line-height:1.25;font-family:Georgia,serif;font-style:italic;text-shadow:0 1px 4px rgba(0,0,0,0.5)}
+
+    /* Day detail area */
+    #day-detail-area{padding:0 12px}
+
+    /* Back to list button */
+    .day-back-btn{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:#e07a5f;background:none;border:none;cursor:pointer;padding:6px 10px;border-radius:8px;margin-bottom:10px;transition:background .2s}
+    .day-back-btn:hover{background:rgba(224,122,95,0.08)}
+
+    /* Day cards — expanded detail */
+    .days-list{display:none}
+    .day-card{background:#fff;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.06);border:1px solid #f0ece3;overflow:hidden;transition:box-shadow .2s}
+    .day-card:active{box-shadow:0 2px 8px rgba(0,0,0,0.12)}
+    .day-header{position:relative;cursor:pointer;padding:10px 12px;display:flex;align-items:center;gap:10px;transition:background .2s}
+    .day-card.expanded .day-header{border-bottom:1px solid #f0ece3}
+    .day-badge{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;color:#fff;font-size:11px;font-weight:800;flex-shrink:0;letter-spacing:-0.5px}
+    .day-info{flex:1;min-width:0}
+    .day-title{font-size:0.82rem;font-weight:700;color:#3d405b;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .day-meta{font-size:10px;color:#999;font-weight:500;margin-top:1px}
+    .day-chevron{color:#c4bfb3;font-size:0.9rem;transition:transform .25s ease;flex-shrink:0}
+    .day-card.expanded .day-chevron{transform:rotate(90deg)}
+    .day-close-bar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:#fbf8f3;border-bottom:1px solid #f0ece3}
+    .day-close-btn{font-size:11px;font-weight:700;color:#e07a5f;background:none;border:none;cursor:pointer;padding:4px 8px;border-radius:6px;display:inline-flex;align-items:center;gap:4px}
+    .day-close-btn:hover{background:rgba(224,122,95,0.08)}
+    .day-gmaps-btn{font-size:11px;font-weight:700;color:#3d405b;background:none;border:none;cursor:pointer;padding:4px 8px;border-radius:6px;display:inline-flex;align-items:center;gap:4px}
+    .day-gmaps-btn:hover{background:rgba(61,64,91,0.06)}
+    
+    /* Day detail — iOS slide */
+    .day-detail{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1),opacity .25s ease;opacity:0}
+    .day-detail.open{max-height:2000px;opacity:1}
+    .day-detail-inner{padding:14px}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+    
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:10px}
+    .stat-box{background:#fdfbf7;padding:6px;border-radius:8px;border:1px solid #f5f0e6;text-align:center}
+    .stat-label{font-size:8px;text-transform:uppercase;font-weight:700;color:#aaa;letter-spacing:0.5px}
+    .stat-value{font-size:0.7rem;font-weight:800;color:#3d405b;margin-top:1px}
+    .stat-value.terracotta{color:#e07a5f}
+    .stat-value.sage{color:#81b29a}
+    
+    .tz-bar{background:rgba(242,204,143,0.15);border:1px solid rgba(242,204,143,0.25);border-radius:8px;padding:6px 10px;font-size:11px;display:flex;justify-content:space-between;align-items:center;color:#8a6d3b;margin-bottom:10px}
+    
+    .route-btn{display:block;width:100%;background:#e07a5f;color:#fff;border-radius:10px;padding:10px;text-align:center;font-size:0.75rem;font-weight:800;box-shadow:0 2px 6px rgba(224,122,95,0.3);margin-bottom:10px}
+    .route-btn:hover{background:#3d405b}
+    
+    .detail-box{background:#fbf8f3;border:1px solid #f5f0e6;border-radius:10px;padding:10px;margin-bottom:8px}
+    .detail-title{font-size:11px;font-weight:700;color:#3d405b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px}
+    .detail-text{font-size:11px;color:#555;line-height:1.5;white-space:pre-line}
+    
+    .food-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px}
+    .food-box{border-radius:10px;padding:8px}
+    .food-sage{background:rgba(129,178,154,0.1);border:1px solid rgba(129,178,154,0.2)}
+    .food-gold{background:rgba(242,204,143,0.15);border:1px solid rgba(242,204,143,0.25)}
+    .food-title{font-size:11px;font-weight:700;margin-bottom:3px}
+    .food-title.sage{color:#81b29a}
+    .food-title.gold{color:#8a6d3b}
+    .food-item{font-size:10px;color:#555;margin:1px 0;display:flex;align-items:flex-start;gap:3px}
+    .food-dot{color:#81b29a;margin-top:1px;flex-shrink:0}
+    .market-tag{display:inline-block;font-size:10px;background:#fff;border:1px solid rgba(242,204,143,0.3);padding:2px 6px;border-radius:4px;margin:1px;color:#555;font-weight:500}
+    
+    .hotel-row{border-top:1px solid #f5f0e6;padding-top:6px;font-size:11px;color:#888}
+    
+    /* Stats bar (shared) */
+    .stats-bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-around;align-items:center;text-align:center;padding:14px 8px;background:#fbf8f3;border-radius:14px;border:1px solid #f5f0e6;margin-bottom:12px}
+    .stats-item .stats-num{font-size:1.3rem;font-weight:800;display:block}
+    .stats-item .stats-lbl{font-size:9px;text-transform:uppercase;font-weight:700;color:#aaa}
+    .stats-divider{width:1px;height:24px;background:#f5f0e6}
+    
+    /* Info tab */
+    .info-card{background:#fff;border-radius:14px;box-shadow:0 1px 4px rgba(0,0,0,0.06);border:1px solid #f5f0e6;padding:16px;margin-bottom:12px}
+    .info-dark{background:#3d405b;color:#fff}
+    .info-title{font-size:0.9rem;font-weight:700;font-family:Georgia,serif;font-style:italic;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+    .info-title.amber{color:#92400e}
+    .info-title.white{color:#f2cc8f}
+    
+    /* Map */
+    #map{height:400px;width:100%;border-radius:12px;background:#f5f0e6}
+    
+    footer{background:#3d405b;color:#fff;text-align:center;padding:20px 16px;margin-bottom:64px}
+    footer .footer-title{font-size:0.85rem;font-weight:700;color:#f2cc8f;font-family:Georgia,serif;font-style:italic}
+    footer .footer-sub{font-size:10px;opacity:0.6;margin-top:4px}
+  </style>
+</head>
+<body>
+
+  <!-- HERO — MAPPA DEL PERCORSO -->
+  <div class="hero">
+    <div id="hero-map" style="position:absolute;inset:0;z-index:1"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(61,64,91,0.15),rgba(61,64,91,0.85));z-index:2"></div>
+    <div class="hero-text">
+      <h1>California On The Road</h1>
+      <p>20 giorni • 5 stati • 4.360 km</p>
+    </div>
+  </div>
+
+  <!-- TAB BAR -->
+  <div class="container">
+    <div class="tab-bar">
+      <button class="tab-btn active" id="tab-home" onclick="switchTab('home')">🏠<br>Home</button>
+      <button class="tab-btn" id="tab-itinerary" onclick="switchTab('itinerary')">📋<br>Itinerario</button>
+      <button class="tab-btn" id="tab-map" onclick="switchTab('map')">🗺️<br>Mappa</button>
+      <button class="tab-btn" id="tab-info" onclick="switchTab('info')">✈️<br>Info</button>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="container">
+
+    <!-- HOME -->
+    <div id="panel-home">
+      <div class="home-section">
+        <p class="home-desc">
+          <strong>California On The Road</strong> — 20 giorni, 5 stati, 4.360 chilometri. 
+          Da Los Angeles a San Francisco, attraversando i deserti del Mojave, i canyon epici del Sud-Ovest, 
+          le luci di Las Vegas e le foreste millenarie di Sequoia e Yosemite. 
+          Un viaggio che attraversa il cuore dell'America, tra natura selvaggia, Route 66 e città leggendarie.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-bar">
+        <div class="stats-item"><span class="stats-num" style="color:#e07a5f">20</span><span class="stats-lbl">Giorni</span></div>
+        <div class="stats-divider"></div>
+        <div class="stats-item"><span class="stats-num" style="color:#3d405b">4.360</span><span class="stats-lbl">Km</span></div>
+        <div class="stats-divider"></div>
+        <div class="stats-item"><span class="stats-num" style="color:#81b29a">5</span><span class="stats-lbl">Stati</span></div>
+        <div class="stats-divider"></div>
+        <div class="stats-item"><span class="stats-num" style="color:#e07a5f">7</span><span class="stats-lbl">Parchi</span></div>
+        <div class="stats-divider"></div>
+        <div class="stats-item"><span class="stats-num" style="color:#f2cc8f">12</span><span class="stats-lbl">Hotel</span></div>
+      </div>
+    </div>
+
+    <!-- ITINERARY -->
+    <div id="panel-itinerary" style="display:none">
+      <div class="phase-pills" id="phase-pills"></div>
+      <div class="day-grid" id="day-grid"></div>
+      <div id="day-detail-area"></div>
+    </div>
+
+    <!-- MAP -->
+    <div id="panel-map" style="display:none">
+      <div class="info-card">
+        <div id="map"></div>
+        <div id="map-fallback" style="display:none;text-align:center;padding:32px 0">
+          <p style="color:#aaa">🗺️ Mappa non disponibile offline</p>
+        </div>
+        <div style="text-align:center;margin-top:12px">
+          <a href="https://www.google.com/maps/dir/Los+Angeles+CA/Santa+Monica+CA/Hollywood+CA/Joshua+Tree+NP/Lake+Havasu+City+AZ/Williams+AZ/Monument+Valley+UT/Page+AZ/Kanab+UT/Bryce+Canyon+NP/Zion+NP/Las+Vegas+NV/Bakersfield+CA/Sequoia+NP/Yosemite+Valley/San+Francisco+CA/" target="_blank" rel="noopener" class="route-btn">🗺️ Percorso completo su Google Maps</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div id="panel-info" style="display:none">
+      <div class="info-card">
+        <div class="info-title amber">🛂 Documenti & Noleggio</div>
+        <div style="font-size:11px;color:#555;line-height:1.6">
+          <p>• Passaporto in corso di validità + ESTA approvato</p>
+          <p>• Patente di guida italiana</p>
+          <p>• Carta di credito fisica</p>
+          <p>• Voucher noleggio auto</p>
+          <p>• Assicurazione medica/viaggio</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-title amber">🌲 Parchi Nazionali</div>
+        <div style="font-size:11px;color:#555;line-height:1.6">
+          <p>• Scaricare mappe offline Google Maps</p>
+          <p>• App ufficiale NPS</p>
+          <p>• Scorte d'acqua e crema solare 50+</p>
+          <p>• Pieno di benzina prima di ogni parco</p>
+          <p>• Verificare chiusure strade su nps.gov</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-title amber">🥗 Cibo & Spesa</div>
+        <div style="font-size:11px;color:#555;line-height:1.6">
+          <p>• Snack proteici vegani e frutta secca</p>
+          <p>• Hummus, crackers e pane per pranzi al sacco</p>
+          <p>• Borraccia termica (almeno 1L a testa)</p>
+          <p>• Frigo portatile o borsa termica per l'auto</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-title">California On The Road 2026 🇺🇸🌵</div>
+    <div class="footer-sub">Itinerario di viaggio interattivo</div>
+  </footer>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active" id="nav-home" onclick="switchTab('home')"><span class="nav-icon">🏠</span>Home</button>
+    <button class="nav-btn" id="nav-itinerary" onclick="switchTab('itinerary')"><span class="nav-icon">📋</span>Itinerario</button>
+    <button class="nav-btn" id="nav-map" onclick="switchTab('map')"><span class="nav-icon">🗺️</span>Mappa</button>
+    <button class="nav-btn" id="nav-info" onclick="switchTab('info')"><span class="nav-icon">✈️</span>Info</button>
+  </nav>
+
+  <script src="itinerary-data.js?v=20260603p"></script>
+  <script src="links-data.js?v=20260603p"></script>
+  <script src="data.js?v=20260603p"></script>
+  <script src="app.js?v=20260603p"></script>
+</body>
+</html>
