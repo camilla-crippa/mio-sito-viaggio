@@ -39,11 +39,11 @@ const phaseColors = {
 };
 
 const phaseNames = {
-  phase1: 'Costa & L.A.',
-  phase2: 'Deserti & R66',
-  phase3: 'Canyon del Sud',
-  phase4: 'Las Vegas',
-  phase5: 'Sequoia & SFO'
+  phase1: 'Los Angeles',
+  phase2: 'Route 66',
+  phase3: 'I Parchi Rossi',
+  phase4: 'Las Vegas & Death Valley',
+  phase5: 'Sequoia, Yosemite, SFO e costa californiana'
 };
 
 const phaseIcons = {
@@ -365,7 +365,7 @@ function renderDayContent(d) {
 
   // Food & Markets
   html += '<div class="food-grid">';
-  html += '<div class="food-box food-sage"><div class="food-title sage">🥗 Cibo Veg</div>' + foodItems + '</div>';
+  html += '<div class="food-box food-sage"><div class="food-title sage">🥗 Cibo</div>' + foodItems + '</div>';
   html += '<div class="food-box food-gold"><div class="food-title gold">🛒 Supermarket</div>' + marketItems + '</div>';
 
   // Bonus stops

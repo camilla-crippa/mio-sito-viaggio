@@ -28,11 +28,11 @@ const checklistData = {
 
 // ==================== PHASES DATA ====================
 const phasesData = [
-  { id: "phase1", title: "1. Costa & L.A.", days: "1 - 3", icon: "🌴", km: "175", desc: "La costa californiana e la scintillante Los Angeles." },
-  { id: "phase2", title: "2. Deserti & R66", days: "4 - 6", icon: "🌵", km: "955", desc: "Joshua Tree, Pioneertown e la leggendaria Route 66." },
-  { id: "phase3", title: "3. I Canyon del Sud", days: "7 - 11", icon: "🏜️", km: "1515", desc: "I parchi epici: Grand Canyon, Monument, Bryce e Zion." },
-  { id: "phase4", title: "4. Las Vegas & Nevada", days: "12 - 13", icon: "🎲", km: "470", desc: "Il lusso della Strip e il grande deserto del Mojave." },
-  { id: "phase5", title: "5. Sequoia & SFO", days: "14 - 20", icon: "🌉", km: "1252", desc: "Sequoia, Yosemite e il gran finale a San Francisco." }
+  { id: "phase1", title: "1. Los Angeles", days: "1 - 3", icon: "🌴", km: "175", desc: "La scintillante Los Angeles." },
+  { id: "phase2", title: "2. Route 66", days: "3 - 4", icon: "🌵", km: "955", desc: "La leggendaria Route 66." },
+  { id: "phase3", title: "3. I Parchi Rossi", days: "4 - 9", icon: "🏜️", km: "1515", desc: "I parchi epici: Grand Canyon, Monument, Antelope, Bryce e Zion." },
+  { id: "phase4", title: "4. Las Vegas & Death Valley", days: "9 - 12", icon: "🎲", km: "470", desc: "Il lusso della Strip e la Death Valley." },
+  { id: "phase5", title: "5. Sequoia, Yosemite, SFO e costa californiana", days: "12 - 16", icon: "🌉", km: "1252", desc: "Sequoia, Yosemite, San Francisco e la costa californiana." }
 ];
 
 // ==================== STATE ====================

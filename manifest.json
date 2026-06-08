@@ -1,7 +1,7 @@
 {
-  "name": "California On The Road 2026",
-  "short_name": "CA Road Trip",
-  "description": "Itinerario di 20 giorni attraverso California, Nevada, Utah e Arizona",
+  "name": "USA On The Road 2026",
+  "short_name": "USA Road Trip",
+  "description": "Itinerario di 16 giorni attraverso California, Nevada, Utah e Arizona",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
