@@ -2,24 +2,25 @@
 const dayPhotos = {
   1: 'photos/day1-la.jpg',
   2: 'photos/day2-santamonica.jpg',
-  3: 'photos/day3-hollywood.jpg',
-  4: 'photos/day4-joshuatree.jpg',
-  5: 'photos/day5-lakehavasu.jpg',
-  6: 'photos/day6-route66.jpg',
-  7: 'photos/day7-grandcanyon.jpg',
-  8: 'photos/day8-horseshoe.jpg',
-  9: 'photos/day9-antelope.jpg',
-  10: 'photos/day10-bryce.jpg',
-  11: 'photos/day11-zionvegas.jpg',
-  12: 'photos/day12-vegas.jpg',
-  13: 'photos/day13-vegasbakersfield.jpg',
-  14: 'photos/day14-sequoia.jpg',
-  15: 'photos/day15-yosemite.jpg',
-  16: 'photos/day16-sanfrancisco.jpg',
-  17: 'photos/day17-sausalito.jpg',
-  18: 'photos/day18-sf.jpg',
-  19: 'photos/day19-alcatraz.jpg',
-  20: 'photos/day20-return.jpg'
+  3: 'photos/day3-route66.jpg',
+  4: 'photos/day-grandcanyon.png',
+  5: 'photos/day5-grandcanyon.jpg',
+  6: 'photos/NOday5-horseshoe.jpg',
+  7: 'photos/day7-antelope.jpg',
+  8: 'photos/day-brycezion.png',
+  9: 'photos/day9-vegas.jpg',
+  10: 'photos/day-valleyoffire.png',
+  11: 'photos/day-deathvalley.png',
+  12: 'photos/day12-sequoia.jpg',
+  13: 'photos/day13-yosemite.jpg',
+  14: 'photos/day14-sanfrancisco.jpg',
+  15: 'photos/day-redondobeach.png',
+  16: 'photos/NOday20-return.jpg'
+
+  //17: 'photos/day17-sausalito.jpg',
+  //18: 'photos/day18-sf.jpg',
+  //19: 'photos/day19-alcatraz.jpg',
+  //20: 'photos/day20-return.jpg'
 };
 
 const phasePhotos = {
@@ -390,24 +391,25 @@ function renderDayContent(d) {
 var mapStops = [
   { day: 1, label: "Los Angeles", lat: 34.0850, lng: -118.3510, phase: "phase1" },
   { day: 2, label: "Santa Monica", lat: 34.0093, lng: -118.4973, phase: "phase1" },
-  { day: 3, label: "Hollywood", lat: 34.1341, lng: -118.3215, phase: "phase1" },
-  { day: 4, label: "Joshua Tree NP", lat: 34.0116, lng: -116.1698, phase: "phase2" },
-  { day: 5, label: "Lake Havasu City", lat: 34.4839, lng: -114.3224, phase: "phase2" },
-  { day: 6, label: "Williams (Route 66)", lat: 35.2495, lng: -112.1910, phase: "phase2" },
-  { day: 7, label: "Grand Canyon ➔ Monument Valley", lat: 36.9980, lng: -110.0983, phase: "phase3" },
-  { day: 8, label: "Page / Horseshoe Bend", lat: 36.9147, lng: -111.4558, phase: "phase3" },
-  { day: 9, label: "Antelope Canyon ➔ Kanab", lat: 37.0475, lng: -112.5263, phase: "phase3" },
-  { day: 10, label: "Bryce Canyon NP", lat: 37.5930, lng: -112.1871, phase: "phase3" },
-  { day: 11, label: "Zion NP ➔ Las Vegas", lat: 36.1716, lng: -115.1391, phase: "phase3" },
-  { day: 12, label: "Las Vegas Strip", lat: 36.1147, lng: -115.1728, phase: "phase4" },
-  { day: 13, label: "Bakersfield", lat: 35.3733, lng: -119.0187, phase: "phase4" },
-  { day: 14, label: "Sequoia NP", lat: 36.5647, lng: -118.7520, phase: "phase5" },
-  { day: 15, label: "Yosemite Valley", lat: 37.7450, lng: -119.5938, phase: "phase5" },
-  { day: 16, label: "San Francisco", lat: 37.7898, lng: -122.4111, phase: "phase5" },
-  { day: 17, label: "Sausalito", lat: 37.8591, lng: -122.4853, phase: "phase5" },
-  { day: 18, label: "SF: Lombard St", lat: 37.8021, lng: -122.4194, phase: "phase5" },
-  { day: 19, label: "Alcatraz Island", lat: 37.8267, lng: -122.4230, phase: "phase5" },
-  { day: 20, label: "SFO Aeroporto", lat: 37.6213, lng: -122.3790, phase: "phase5" }
+  { day: 3, label: "Kingman", lat: 35.2307035, lng: -114.0501177, phase: "phase2" },
+  { day: 4, label: "Grand Canyon", lat: 36.0569695, lng: -112.1426409, phase: "phase2" },
+  { day: 5, label: "Monument Valley", lat: 36.9810049, lng: -110.2352289, phase: "phase3" },
+  { day: 6, label: "Page", lat: 36.9379539, lng: -111.5627602, phase: "phase3" },
+  { day: 7, label: "Bryce Canyon NP", lat: 37.5837387, lng: -112.3559618, phase: "phase3" },
+  { day: 8, label: "Zion NP", lat: 37.3219774, lng: -113.2083844, phase: "phase3" },
+  { day: 9, label: "Las Vegas Strip", lat: 36.1174924, lng: -115.1870853, phase: "phase3" },
+  { day: 10, label: "Valley of Fire", lat: 36.4423244, lng: -114.5870709, phase: "phase4" },
+  { day: 11, label: "Death Valley", lat: 36.4757163, lng: -118.371463, phase: "phase4" },
+  { day: 12, label: "Sequoia NP", lat: 36.4849009, lng: -118.7481545, phase: "phase4" },
+  { day: 13, label: "Yosemite Valley", lat: 37.7254996, lng: -119.6128972, phase: "phase5" },
+  { day: 14, label: "San Francisco", lat: 37.7576928, lng: -122.4788853, phase: "phase5" },
+  { day: 15, label: "Redondo Beach", lat: 33.8546271, lng: -118.4526333, phase: "phase5" },
+  { day: 16, label: "LAX Aeroporto", lat: 33.9432174, lng: -118.4099442, phase: "phase5" }
+
+  //{ day: 17, label: "Sausalito", lat: 37.8591, lng: -122.4853, phase: "phase5" },
+  //{ day: 18, label: "SF: Lombard St", lat: 37.8021, lng: -122.4194, phase: "phase5" },
+  //{ day: 19, label: "Alcatraz Island", lat: 37.8267, lng: -122.4230, phase: "phase5" },
+  //{ day: 20, label: "SFO Aeroporto", lat: 37.6213, lng: -122.3790, phase: "phase5" }
 ];
 
 function initMap() {
