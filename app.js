@@ -43,7 +43,7 @@ const phaseNames = {
   phase2: 'Route 66',
   phase3: 'I Parchi Rossi',
   phase4: 'Las Vegas & Death Valley',
-  phase5: 'Sequoia, Yosemite, SFO e costa californiana'
+  phase5: 'SFO e costa californiana'
 };
 
 const phaseIcons = {
@@ -323,14 +323,14 @@ function renderDayContent(d) {
     youtubeHTML = '<div style="background:rgba(220,38,38,0.05);padding:10px;border-radius:8px;border:1px solid rgba(220,38,38,0.1);margin-bottom:8px"><a href="' + links.youtube + '" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;background:#dc2626;color:#fff;font-size:11px;font-weight:700;padding:6px 12px;border-radius:6px">▶️ Video su YouTube</a></div>';
   }
 
-  // Food & Supermarkets
+  // Food & Pranzo
   var foodItems = '';
   if (d.food) {
     d.food.forEach(function(f) { foodItems += '<div class="food-item"><span class="food-dot">•</span>' + f + '</div>'; });
   }
   var marketItems = '';
-  if (d.supermarkets) {
-    d.supermarkets.forEach(function(s) { marketItems += '<span class="market-tag">' + s + '</span> '; });
+  if (d.pranzo) {
+    d.pranzo.forEach(function(s) { marketItems += '<span class="market-tag">' + s + '</span> '; });
   }
 
   var html = '';
@@ -365,8 +365,8 @@ function renderDayContent(d) {
 
   // Food & Markets
   html += '<div class="food-grid">';
-  html += '<div class="food-box food-sage"><div class="food-title sage">🥗 Cibo</div>' + foodItems + '</div>';
-  html += '<div class="food-box food-gold"><div class="food-title gold">🛒 Supermarket</div>' + marketItems + '</div>';
+  html += '<div class="food-box food-sage"><div class="food-title sage">🍔 Cibo</div>' + foodItems + '</div>';
+  html += '<div class="food-box food-gold"><div class="food-title gold">🛒 Pranzo</div>' + marketItems + '</div>';
 
   // Bonus stops
   var bonusItems = '';

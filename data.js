@@ -32,7 +32,7 @@ const phasesData = [
   { id: "phase2", title: "2. Route 66", days: "3 - 4", icon: "🌵", km: "955", desc: "La leggendaria Route 66." },
   { id: "phase3", title: "3. I Parchi Rossi", days: "4 - 9", icon: "🏜️", km: "1515", desc: "I parchi epici: Grand Canyon, Monument, Antelope, Bryce e Zion." },
   { id: "phase4", title: "4. Las Vegas & Death Valley", days: "9 - 12", icon: "🎲", km: "470", desc: "Il lusso della Strip e la Death Valley." },
-  { id: "phase5", title: "5. Sequoia, Yosemite, SFO e costa californiana", days: "12 - 16", icon: "🌉", km: "1252", desc: "Sequoia, Yosemite, San Francisco e la costa californiana." }
+  { id: "phase5", title: "5. SFO e costa californiana", days: "12 - 16", icon: "🌉", km: "1252", desc: "San Francisco e la costa californiana." }
 ];
 
 // ==================== STATE ====================
