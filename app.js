@@ -5,7 +5,7 @@ const dayPhotos = {
   3: 'photos/day3-route66.jpg',
   4: 'photos/day-grandcanyon.png',
   5: 'photos/day5-grandcanyon.jpg',
-  6: 'photos/NOday5-horseshoe.jpg',
+  6: 'photos/day6-horseshoe.jpg',
   7: 'photos/day7-antelope.jpg',
   8: 'photos/day-brycezion.png',
   9: 'photos/day9-vegas.jpg',
@@ -15,7 +15,7 @@ const dayPhotos = {
   13: 'photos/day13-yosemite.jpg',
   14: 'photos/day14-sanfrancisco.jpg',
   15: 'photos/day-redondobeach.png',
-  16: 'photos/NOday20-return.jpg'
+  16: 'photos/day16-return.jpg'
 
   //17: 'photos/day17-sausalito.jpg',
   //18: 'photos/day18-sf.jpg',
