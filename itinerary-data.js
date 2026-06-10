@@ -264,7 +264,7 @@ sunrise:"06:30", // ok
 sunset:"19:33", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Ramada by Wyndham Redondo Beach",
-desc:"Sveglia presto e ultimo giro per San Francisco. Vista Golden Gate Bridge e Pier 39 (se non visti il giorno prima). Direzione Los Angeles/ Redondo Beach tramite Highway 1 con possibili tappe lungo la costa:<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Monterey (Lone Cypress)</li><li>Carmel by the Sea</li><li>Bixby Creek Bridge</li><li>Big Sur</li><li>McWay Falls View Point</li><li>Morro Bay (Morro Rock)</li><li>Santa Barbara</li><li>Malibù (Malibu Pier)</li></ul>",
+desc:"Sveglia presto e ultimo giro per San Francisco. Vista Golden Gate Bridge e Pier 39 (se non visti il giorno prima) <br> Direzione Los Angeles/ Redondo Beach tramite Highway 1 con possibili tappe lungo la costa:<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Monterey (Lone Cypress)</li><li>Carmel by the Sea</li><li>Bixby Creek Bridge</li><li>Big Sur</li><li>McWay Falls View Point</li><li>Morro Bay (Morro Rock)</li><li>Santa Barbara</li><li>Malibù (Malibu Pier)</li></ul> Arrivo a Redondo Beach in serata, hotel e cena",
 logistics:"Yosemite estremamente affollato in agosto. Parcheggiare nei parcheggi della Valley e usare navette interne gratuite.",
 food:["Old Tony’s","Kincaid’s Fish","Chop & Steakhouse"],
 pranzo:["Per pranzo tappa lungo la costa in direzione Redondo Beach"],

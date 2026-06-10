@@ -305,7 +305,7 @@ function renderDayContent(d) {
     if (links.parkingGmaps && links.parkingGmaps.length > 0) {
       parkingHTML += '<div style="margin-top:6px">';
       links.parkingGmaps.forEach(function(p) {
-        parkingHTML += '<a href="' + p.url + '" target="_blank" style="display:flex;align-items:center;gap:4px;font-size:11px;color:#e07a5f;font-weight:700;margin:2px 0">🅿️ ' + p.name + '</a>';
+        parkingHTML += '<a href="' + p.url + '" target="_blank" style="display:flex;align-items:center;gap:4px;font-size:11px;color:#e07a5f;font-weight:700;margin:2px 0">📍 ' + p.name + '</a>';
       });
       parkingHTML += '</div>';
     }
@@ -315,7 +315,7 @@ function renderDayContent(d) {
   // Transfer
   var transferHTML = '';
   if (d.transferInfo) {
-    transferHTML = '<details style="background:rgba(61,64,91,0.05);padding:10px;border-radius:8px;border:1px solid rgba(61,64,91,0.15);margin-bottom:8px"><summary style="font-size:11px;font-weight:700;color:#3d405b;cursor:pointer">🚗 Indicazioni Transfert</summary><div style="font-size:11px;line-height:1.6;color:#555;margin-top:6px">' + d.transferInfo + '</div></details>';
+    transferHTML = '<details style="background:rgba(61,64,91,0.05);padding:10px;border-radius:8px;border:1px solid rgba(61,64,91,0.15);margin-bottom:8px"><summary style="font-size:11px;font-weight:700;color:#3d405b;cursor:pointer">Indicazioni Ritiro Auto</summary><div style="font-size:11px;line-height:1.6;color:#555;margin-top:6px">' + d.transferInfo + '</div></details>';
   }
 
   // YouTube
