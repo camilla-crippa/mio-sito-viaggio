@@ -108,8 +108,8 @@ const linksData = {
   },
   16: {
     hotelGmaps: "https://maps.google.com/?q=Aeroporto+Internazionale+di+Los+Angeles",
-    parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Parcheggio Redondo Beach</li> </ul>",
-    parkingCost: "?",
+    parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Parcheggio dell'hotel e raggiungere molo a piedi (10')</li> <li>Parcheggio Redondo Beach</li> </ul>",
+    parkingCost: "Gratis (hotel) | Redondo Beach Parking a pagamento",
     rentalReturnGmaps: "https://maps.google.com/?q=5251+W+98TH+ST+LOS+ANGELES+CA+90045",
     rentalReturnGmapsLabel: "Alamo LAX - Los Angeles International Airport",
     routeGmaps: "https://www.google.com/maps/dir/Ramada+Limited+Redondo+Beach,+435+S+Pacific+Coast+Hwy,+Redondo+Beach,+CA+90277,+Stati+Uniti/Redondo+Coffee+Shop+and+Bait+%26+Tackle+Shop,+141+Fishermans+Wharf,+Redondo+Beach,+CA+90277,+Stati+Uniti/Aeroporto+Internazionale+di+Los+Angeles,+1+World+Wy,+Los+Angeles,+CA+90045,+Stati+Uniti"

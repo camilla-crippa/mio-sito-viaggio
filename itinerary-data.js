@@ -9,12 +9,12 @@ sunrise:"06:08", // ok
 sunset:"19:48", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Hotel Ziggy on Sunset West Hollywood",
-desc:"Atterraggio a LAX alle 14:55 con volo British da Londra. Considerare 60-90 min per controlli, bagagli, ritiro auto e uscita dall'aeroporto. Trasferimento in hotel e tramonto al Griﬃth Observatory. Serata tranquilla in zona West Hollywood.",
-logistics:"Auto prenotata con Alamo.",
+desc:"Atterraggio a LAX alle 14:55 con volo British da Londra. Considerare 60-90 min per controlli, bagagli, ritiro auto e uscita dall'aeroporto. Trasferimento in hotel e tramonto al <strong>Griﬃth Observatory</strong>. Serata tranquilla in zona <strong>West Hollywood</strong>",
+//logistics:"Auto prenotata con Alamo.",
 transferInfo:"<p>Dopo aver superato i controlli doganali e ritirato i bagagli per raggiungere il lotto auto Alamo uscire dal terminal e seguire i cartelli viola o arancioni con la scritta <strong>Rental Car Shuttles</strong>. Attendere il passaggio dell'autobus navetta gratuito. Il tragitto durerà circa 10-15 minuti. Dirigersi direttamente al lotto di veicoli Alamo per scegliere un veicolo. Le chiavi si troveranno in macchina e la prenotazione sarà verificata alla cabina di uscita del lotto. <br> ⚠️ <strong>Importante:</strong> Aver già fatto il check-in online e inserito i dettagli della carta di credito </p>",
 food:["Saddle Ranch Chop House","Mels Drive-In","Carney's Restaurant"],
 pranzo:["A bordo dell'aereo"],
-region:"Costa & Città",
+region:"California",
 gmaps:"https://maps.google.com/?q=Osservatorio+Griffith+Los+Angeles",
 phaseId:"phase1"},
 
@@ -28,11 +28,11 @@ sunrise:"06:09", // ok
 sunset:"19:47", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Hotel Ziggy on Sunset West Hollywood",
-desc:"Partenza dall’hotel in direzione Beverly Hills e Rodeo Drive poi verso Santa Monica per pranzo e passeggiata fino a Venice Beach. Tramonto a Santa Monica. (Distanza hotel - Santa Monica circa 25’). Rientro in hotel, cena e a spasso per la città",
-logistics:"Venice Beach Parking Lot o lotti su Pacific Ave; a Santa Monica usare Santa Monica Place Parking o Structure 8; a Malibu usare parcheggi ufficiali spiaggia.",
+desc:"Partenza dall’hotel in direzione <strong>Beverly Hills</strong> (vista scritta Hollywood) e <strong>Rodeo Drive</strong> poi verso <strong>Santa Monica Pier</strong> per pranzo e passeggiata fino a <strong>Venice Beach</strong>. Tramonto a Santa Monica (distanza hotel - Santa Monica circa 25’) <br>Rientro in hotel, cena e a spasso per la città",
+//logistics:"Venice Beach Parking Lot o lotti su Pacific Ave; a Santa Monica usare Santa Monica Place Parking o Structure 8; a Malibu usare parcheggi ufficiali spiaggia.",
 food:["Saddle Ranch Chop House","Mels Drive-In","Carney's Restaurant"],
 pranzo:["Pier Burger","The Albright"],
-region:"Costa & Città",
+region:"California",
 gmaps:"https://maps.google.com/?q=Santa+Monica+California+Stati+Uniti",
 phaseId:"phase1"},
 
@@ -46,11 +46,11 @@ sunrise:"06:10", // ok
 sunset:"19:31", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Motel 6-Kingman",
-desc:"A spasso per la Walk of Fame (Dolby Theatre, TCL Chinese Theatre) prima della partenza in mattinata in direzione Kingman con tappe sulla Route 66 (Barstow città fantasma, Amboy, Oatman). Percorrere la National Trails Hwy (passando per Amboy Roy's Motel & Cafe) e la Oatman Highway con tappa a Oatman Hotel Restaurant & Bar",
-logistics:"Osservatorio Griffith: lasciare auto vicino al Teatro Greco. Hollywood: Hollywood & Highland Parking (6801 Hollywood Blvd). Beverly Hills: Parking 461 N Bedford Dr (prime 2h gratis). Bus Sightseeing: fermata Paramount Studios o Dolby Theatre.",
+desc:"A spasso per la <strong>Walk of Fame</strong> (Dolby Theatre, TCL Chinese Theatre) prima della partenza in mattinata in direzione <strong>Kingman</strong> con tappe sulla <strong>Route 66</strong> (<strong>Barstow</strong> città fantasma, <strong>Amboy, Oatman</strong>)<br> Percorrere la <strong>National Trails Hwy</strong> (passando per <strong>Amboy Roy's Motel & Cafe</strong>) e la <strong>Oatman Highway</strong> con tappa a <strong>Oatman Hotel Restaurant & Bar</strong>",
+//logistics:"Osservatorio Griffith: lasciare auto vicino al Teatro Greco. Hollywood: Hollywood & Highland Parking (6801 Hollywood Blvd). Beverly Hills: Parking 461 N Bedford Dr (prime 2h gratis). Bus Sightseeing: fermata Paramount Studios o Dolby Theatre.",
 food:["Mr D'z Route 66 Diner (anche colazione)","Black Bear Diner Kingman"],
 pranzo:["Pranzo in locale tipico lungo la Route 66"],
-region:"Route 66",
+region:"Arizona",
 gmaps:"https://maps.google.com/?q=Roy's+Motel+%26+Cafe",
 phaseId:"phase2"},
 
@@ -64,11 +64,11 @@ sunrise:"05:52", //ok
 sunset:"19:24", //ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Maswik Lodge",
-desc:"Partenza in mattinata in direzione Grand Canyon con tappe sulla Route 66 (Selingman, Williams). Impostare sul navigatore Peach Spring per arrivare a Selingman passando per la Route 66 storica. Arrivo al Grand Canyon per orario tramonto dal Rim (Hopi Point (più popolare - navetta) - Pima Point (meno aﬀollato - navetta) - Yavapai Point (più comodo perché vicino Visitor Center)). In base all’orario di arrivo valutare la possibilità di fare il giro della Hermit Road con navetta (punto di partenza Village Route Transfer (6’ a piedi da alloggio) - 9 fermate all’andata, 3 al ritorno).",
-logistics:"Palm Springs: Downtown Palm Springs Parking. Hotel-parco per tramonto: ~1h senza soste. Evitare lunghe camminate nelle ore centrali per caldo intenso.",
+desc:"Partenza in mattinata in direzione <strong>Grand Canyon</strong> con tappe sulla <strong>Route 66</strong> (Selingman, Williams). Impostare sul navigatore Peach Spring per arrivare a Selingman passando per la Route 66 storica <br>Arrivo al <strong>Grand Canyon</strong> per orario tramonto dal South Rim (<strong>Hopi Point</strong> (più popolare - navetta) - <strong>Pima Point</strong> (meno aﬀollato - navetta) - <strong>Yavapai Point</strong> (più comodo perché vicino Visitor Center)). In base all’orario di arrivo valutare la possibilità di fare il giro della <strong>Hermit Road</strong> con navetta (punto di partenza Village Route Transfer (6’ a piedi da alloggio) - 9 fermate all’andata, 3 al ritorno)",
+//logistics:"Palm Springs: Downtown Palm Springs Parking. Hotel-parco per tramonto: ~1h senza soste. Evitare lunghe camminate nelle ore centrali per caldo intenso.",
 food:["Maswik Food Court","Arizona Steakhouse","El Tovar Dining Room"],
 pranzo:["Pranzo in locale tipico lungo la Route 66"],
-region:"Route 66",
+region:"Arizona",
 gmaps:"https://maps.google.com/?q=Classic+Cars+on+Route+66",
 phaseId:"phase2"},
 
@@ -82,11 +82,11 @@ sunrise: "05:43", // ok
 sunset: "20:17", // ok
 fuso: "Navajo Nation (+1h)",
 hotel: "Goulding's Lodge",
-desc: "Sveglia presto e alba dal Grand Canyon (Mather Point più comodo perché vicino Visitor Center) - Yaki Point (tranquillo, non affollato). Giro del Grand Canyon (South Rim) in auto sulla Desert View Drive con stop ai punti panoramici: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Pipe Creek Vista</li><li>Duck on a Rock Viewpoint</li><li>Grandview Point</li><li>Moran Point</li><li>Lipan Point</li><li>Navajo Point</li><li>Desert View Watchtower</li></ul> Direzione Monument Valley con tappa al Forrest Gump Point (orologio +1) e tramonto dal Visitor Center su The Mittens and Merrick’s Butte",
-logistics: "Parcheggio hotel e lotti pubblici vicino al London Bridge / English Village.",
+desc: "Sveglia presto e alba al <strong>Grand Canyon</strong> (<strong>Mather Point</strong> più comodo perché vicino al Visitor Center) - <strong>Yaki Point</strong> (tranquillo, non affollato) <br>Giro del Grand Canyon (South Rim) in auto sulla <strong>Desert View Drive</strong> con stop ai punti panoramici: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Pipe Creek Vista</li><li>Duck on a Rock Viewpoint</li><li>Grandview Point</li><li>Moran Point</li><li>Lipan Point</li><li>Navajo Point</li><li>Desert View Watchtower</li></ul> Direzione Monument Valley con tappa al <strong>Forrest Gump Point</strong> (orologio +1) e tramonto dal Visitor Center su <strong>The Mittens and Merrick’s Butte</strong>",
+//logistics: "Parcheggio hotel e lotti pubblici vicino al London Bridge / English Village.",
 food: ["Goulding’s Stagecoach Dining Room", "Champs Chicken", "Hangar 54 Pizza (ultimi due fast food)"],
 pranzo: ["Pranzo on the road: Grand Canyon Village Market & Deli"],
-region: "I Parchi Rossi",
+region: "Arizona",
 gmaps: "https://maps.google.com/?q=Grand+Canyon+South+Rim",
 phaseId: "phase3"
 },
@@ -101,11 +101,11 @@ sunrise:"06:34", // ok
 sunset:"19:21", // ok
 fuso:"Rientro fuso Arizona (-1h)",
 hotel:"Knight Inn Page",
-desc:"Sveglia presto e alba alla Monument Valley. Giro della Monument Valley in auto sulla Monument Valley Scenic Drive con stop ai punti panoramici: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>The Mittens and Merrick’s Butte</li><li>Elephant Butte</li><li>Three sisters</li><li>John Ford’s Point</li><li>Camel Butte</li><li>Rain God Mesa</li><li>Totem Pole</li><li>Artist’s Point</li><li>North Window</li><li>The Thumb</li></ul> Direzione Page e tramonto a Horseshoe Bend (orologio -1)",
-logistics:"Parcheggi lungo strada nelle cittadine Route 66; Hackberry e visitor stop: parcheggi dedicati.",
+desc:"Sveglia presto e alba alla <strong>Monument Valley</strong> dal Visitor Center o dall'alloggio. Giro della Monument Valley in auto sulla <strong>Monument Valley Scenic Drive</strong> con stop ai punti panoramici: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>The Mittens and Merrick’s Butte</li><li>Elephant Butte</li><li>Three sisters</li><li>John Ford’s Point</li><li>Camel Butte</li><li>Rain God Mesa</li><li>Totem Pole</li><li>Artist’s Point</li><li>North Window</li><li>The Thumb</li></ul> Direzione <strong>Page</strong> e tramonto a <strong>Horseshoe Bend</strong> (orologio -1)",
+//logistics:"Parcheggi lungo strada nelle cittadine Route 66; Hackberry e visitor stop: parcheggi dedicati.",
 food:["Big John’s Texas BBQ","Dam Bar & Grille","El Tapatio","Fiesta Mexicana Restaurant"],
 pranzo:["Per pranzo chiosco sulla Scenic Drive: Linda’s Fry Bread stand (vicino John Ford’s Point)"],
-region:"I Parchi Rossi",
+region:"Arizona",
 gmaps:"https://maps.google.com/?q=Oljato-Monument+Valley,+Arizona+84536,+Stati+Uniti",
 phaseId:"phase3"},
 
@@ -119,11 +119,11 @@ sunrise:"06:41", // ok
 sunset:"20:24", // ok
 fuso:"Mountain Time (Utah) (+1h)",
 hotel:"Bryce View Lodge",
-desc:"Tour Lower Antelope Canyon alle 09:45 (presentarsi 45 min prima). Tappa a Big Lake Trading Post per visita a Biidi The Arch (Secret Sand Cave) e poi direzione Bryce Canyon con tappa al punto panoramico Glen Canyon Dam Overlook e Wahweap Overlook con vista su Lake Powell. Tramonto da Ispiration o Sunset Point a Bryce Canyon (10’ in auto da hotel) (orologio +1)",
-logistics:"Grand Canyon: Village Lots + navette gratuite. Desert View: parcheggio proprio. Monument Valley: parcheggio The View Hotel. Valley Drive sterrato.",
+desc:"Tour <strong>Lower Antelope Canyon</strong> alle 09:45 (presentarsi 45 min prima)<br> Tappa a <strong>Big Lake Trading Post</strong> per visita a <strong>Biidi The Arch</strong> (Secret Sand Cave) e poi direzione Bryce Canyon con tappe ai punti panoramici <strong>Glen Canyon Dam Overlook</strong> e <strong>Wahweap Overlook</strong> con vista su <strong>Lake Powell</strong> <br> Tramonto da <strong>Ispiration</strong> o <strong>Sunset Point</strong> a Bryce Canyon (10’ in auto da hotel) (orologio +1)",
+//logistics:"Grand Canyon: Village Lots + navette gratuite. Desert View: parcheggio proprio. Monument Valley: parcheggio The View Hotel. Valley Drive sterrato.",
 food:["The Lodge at Bryce Canyon Restaurant", "Cowboy’s Buﬀet and Steak Room","Ebenezer's Barn & Grill"],
 pranzo:["Per pranzo valutare se prendere qualcosa a Page dopo il tour oppure fare tappa lungo la strada in direzione Bryce Canyon"],
-region:"I Parchi Rossi",
+region:"Arizona & Utah",
 gmaps:"https://maps.google.com/?q=Horseshoe+Bend",
 phaseId:"phase3"},
 
@@ -137,11 +137,11 @@ sunrise:"06:43", // ok
 sunset:"20:18", // ok
 fuso:"Mountain Time (Utah)",
 hotel:"Best Western East Zion Thunderbird Lodge",
-desc:"Sveglia presto e alba al Bryce Canyon a Sunrise Point. Giro di Bryce Canyon in auto con stop ai punti panoramici, consigliato scendere fino a sud e poi fermarsi ai punti panoramici al ritorno (strada chiusa): <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Sunset Point</li><li>Inspiration point (vista su Bryce Amphitheatre)</li><li>Bryce point</li><li>Natural Bridge</li><li>Agua Canyon Overlook</li><li>Rainbow Point e Yovimpa Point</li></ul> Dal Sunset Point parte Navajo Loop Trail (a/r 1/1,5 h - consigliato, scendere dal tratto di Wall Street). Direzione Mount Carmel Junction con possibili tappe (oltre) da valutare in base al tempo a disposizione e alla stanchezza: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Belly of the Dragon (2’ da hotel)</li><li>Sand Caves (12’ da hotel)</li><li>Coral Pink Sand Dunes State Park (20’ da hotel)</li><li>Kanab (20’ da hotel)</li></ul>",
-logistics:"Sunrise Tour: ritrovo 5:15 fuori lobby The View Hotel. Portare Navajo Tribal Park pass ($10/persona). Horseshoe Bend: parcheggio a pagamento, 15-20 min a piedi. Attenzione fuso: lasciando Navajo Nation si guadagna 1h.",
+desc:"Sveglia presto e alba a Bryce Canyon a <strong>Sunrise Point</strong>. Giro di Bryce Canyon in auto con stop ai punti panoramici, consigliato scendere fino a sud e poi fermarsi ai punti panoramici al ritorno (strada chiusa): <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Sunset Point</li><li>Inspiration point (vista su Bryce Amphitheatre)</li><li>Bryce point</li><li>Natural Bridge</li><li>Agua Canyon Overlook</li><li>Rainbow Point e Yovimpa Point</li></ul> Dal Sunset Point parte il <strong>Navajo Loop Trail</strong> (a/r 1/1,5 h - consigliato, scendere dal tratto di Wall Street) <br>Direzione <strong>Mount Carmel Junction</strong> con possibili tappe (oltre) da valutare in base al tempo a disposizione e alla stanchezza: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Belly of the Dragon (2’ da hotel)</li><li>Sand Caves (12’ da hotel)</li><li>Coral Pink Sand Dunes State Park (20’ da hotel)</li><li>Kanab (20’ da hotel)</li></ul>",
+//logistics:"Sunrise Tour: ritrovo 5:15 fuori lobby The View Hotel. Portare Navajo Tribal Park pass ($10/persona). Horseshoe Bend: parcheggio a pagamento, 15-20 min a piedi. Attenzione fuso: lasciando Navajo Nation si guadagna 1h.",
 food:["Thunderbird Restaurant"],
 pranzo:["Ruby's Inn General Store"],
-region:"I Parchi Rossi",
+region:"Utah",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+del+Bryce+Canyon",
 phaseId:"phase3"},
 
@@ -155,11 +155,11 @@ sunrise:"06:43", // ok
 sunset:"19:31", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Horseshoe Las Vegas",
-desc:"Partenza in auto in direzione Canyon Overlook Trail (a/r a piedi 1 h circa) per raggiungere il punto panoramico. Percorrere la Zion Mount Carmel Highway e: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Opzione 1: fare la Zion Canyon Scenic Drive con navetta (partenza da Visitor Center South Entrance - 9 fermate - a/r tempo di percorrenza 90’)</li><li>Opzione 2: tappa a Kolob Canyon Viewpoint (distanza in auto da Canyon Overlook Trail 1 h 10’ circa, 50 miglia/ 80 km) per vista dal punto panoramico e poi direzione Las Vegas (2 h 28’)</li><li>Opzione 3: direzione Las Vegas (2 h 40’) (orologio -1)</li></ul> Benvenuti a Las Vegas!",
-logistics:"Parcheggio meeting point tour Canyon X. Kanab: parcheggio hotel gratuito.",
+desc:"Partenza in auto in direzione <strong>Canyon Overlook Trail</strong> per raggiungere il punto panoramico (a/r a piedi 1h circa). Percorrere la <strong>Zion Mount Carmel Highway</strong> e: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Opzione 1: fare la <strong>Zion Canyon Scenic Drive</strong> con navetta (partenza da Visitor Center South Entrance - 9 fermate - a/r tempo di percorrenza 90’)</li><li>Opzione 2: tappa a <strong>Kolob Canyon Viewpoint</strong> (distanza in auto da Canyon Overlook Trail 1 h 10’ circa, 80 km) per vista dal punto panoramico e poi direzione Las Vegas (2 h 28’)</li><li>Opzione 3: direzione <strong>Las Vegas</strong> (2 h 40’) (orologio -1)</li></ul> Benvenuti a Las Vegas!",
+//logistics:"Parcheggio meeting point tour Canyon X. Kanab: parcheggio hotel gratuito.",
 food:["Virgil's Real BBQ","Fogo de Chão Brazilian Steakhouse","Gilley's Saloon","Dance Hall & Bar-B-Que","Hash House A Go Go (anche colazione)","Hot N Juicy Crawfish","Nacho Daddy","Outback Steakhouse","In-N-Out Burger"],
 pranzo:["White Mountain Trading Post (di fianco all’hotel)","Sol Foods Supermarket (a Springdale)"],
-region:"I Parchi Rossi",
+region:"Utah & Nevada",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+di+Zion",
 phaseId:"phase3"},
 
@@ -173,11 +173,11 @@ sunrise:"05:59", // ok
 sunset:"19:30", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Horseshoe Las Vegas",
-desc:"Raggiungere la Valley of Fire tramite Lake Mead National Recreation Area. Tappa a Elephant Rock con trail di 200 metri, proseguire per la White Domes Road/ Mouse’s Tank Road e Fire Canyon Road con punti panoramici e tappa ad Arch Rock in uscita di ritorno a Las Vegas. (Consigliato partire presto, tempo richiesto mezza giornata). Da vedere in città: Las Vegas Sign, Gold & Silver Pawn Shop, Meow Wolf Las Vegas' Omega Mart. Serata sulla Strip.",
-logistics:"Bryce Canyon: parcheggi viewpoint congestionati in estate; usare shuttle gratuito del parco.",
+desc:"Raggiungere la <strong>Valley of Fire</strong> tramite <strong>Lake Mead National Recreation Area</strong>. Tappa a <strong>Elephant Rock</strong> con trail di 200 metri, proseguire per la <strong>White Domes Road/ Mouse’s Tank Road</strong> e <strong>Fire Canyon Road</strong> con punti panoramici e tappa ad <strong>Arch Rock</strong> in uscita di ritorno a Las Vegas. (Consigliato partire presto, tempo richiesto mezza giornata) <br> Da vedere in città: Las Vegas Sign, Gold & Silver Pawn Shop, Meow Wolf Las Vegas' Omega Mart <br> Cena e serata sulla Strip",
+//logistics:"Bryce Canyon: parcheggi viewpoint congestionati in estate; usare shuttle gratuito del parco.",
 food:["Virgil's Real BBQ","Fogo de Chão Brazilian Steakhouse","Gilley's Saloon","Dance Hall & Bar-B-Que","Hash House A Go Go (anche colazione)","Hot N Juicy Crawfish","Nacho Daddy","Outback Steakhouse","In-N-Out Burger"],
 pranzo:["In base al programma della giornata"],
-region:"Las Vegas",
+region:"Nevada",
 gmaps:"https://maps.google.com/?q=Elephant+Rock+Valley+of+Fire",
 phaseId:"phase4"},
 
@@ -191,11 +191,11 @@ sunrise:"06:00", // ok
 sunset:"19:37", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"The Ranch at Death Valley",
-desc:"Direzione Death Valley con tappa al Red Rock Canyon (mezz’ora da Las Vegas). Giro sulla Scenic Drive a senso unico (durata con soste ai viewpoint 1h circa). Proseguire in direzione Dantes View (circa 2h da Las Vegas) e arrivo ad Artist Palette per il tramonto (distanza 55’ da Dantes View e 15’ da alloggio).",
-logistics:"Zion: parcheggi Springdale/Zion Visitor Center molto richiesti, arrivare presto. Vegas: parcheggio Sahara da verificare (spesso a pagamento).",
+desc:"Direzione <strong>Death Valley</strong> con tappa al <strong>Red Rock Canyon</strong> (mezz’ora da Las Vegas). Giro sulla Scenic Drive a senso unico (durata con soste ai viewpoint 1h circa) <br>Proseguire in direzione <strong>Dantes View</strong> (circa 2h da Las Vegas) e arrivare ad <strong>Artist Palette</strong> per il tramonto (distanza 55’ da Dantes View e 15’ da alloggio)",
+//logistics:"Zion: parcheggi Springdale/Zion Visitor Center molto richiesti, arrivare presto. Vegas: parcheggio Sahara da verificare (spesso a pagamento).",
 food:["The Ranch 1849 Restaurant (con buﬀet)","Last Kind Words Saloon","Wild Rose Tavern","Ice Cream Parlor"],
 pranzo:["Per pranzo valutare se prendere qualcosa a Las Vegas oppure fare tappa lungo la strada in direzione Dantes View"],
-region:"Las Vegas",
+region:"Nevada & California",
 gmaps:"https://maps.google.com/?q=Las+Vegas+Strip,+Nevada,+Stati+Uniti",
 phaseId:"phase4"},
 
@@ -209,12 +209,12 @@ sunrise:"06:08", // ok
 sunset:"19:42", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"The Gateway Restaurant & Lodge",
-desc:"Sveglia presto e alba a Zabriskie Point (10’ in auto da hotel), tour in auto con tappe ai viewpoint a Badwater Basin, Devils Golf Course e Mesquite Flat Sand Dunes (entro le 10 consigliato per le alte temperature). Partenza in direzione Sequoia, distanza lunga. Valutare possibili tappe lungo la strada:<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Trona Pinnacles (torri di tufo bianche) - raggiungibili in auto</li><li>Red Rock Canyon State Park (6$ per veicolo): in prossimità della Red Cliﬀs Natural Area - raggiungibile in auto</li></ul>",
-logistics:"Auto parcheggiata in hotel. Muoversi con Monorail, a piedi o Uber.",
+desc:"Sveglia presto e alba a <strong>Zabriskie Point</strong> (10’ in auto da hotel), tour in auto con tappe ai viewpoint a <strong>Badwater Basin, Devils Golf Course</strong> e <strong>Mesquite Flat Sand Dunes</strong> (entro le 10 consigliato per le alte temperature) <br>Partenza in direzione Sequoia, distanza lunga. Valutare possibili tappe lungo la strada:<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Trona Pinnacles (torri di tufo bianche) - raggiungibile in auto</li><li>Red Rock Canyon State Park: in prossimità della Red Cliﬀs Natural Area - raggiungibile in auto</li></ul>",
+//logistics:"Auto parcheggiata in hotel. Muoversi con Monorail, a piedi o Uber.",
 food:["The Gateway Restaurant & Lodge"],
 pranzo:["Per pranzo tappa lungo la strada in direzione Three Rivers"],
 bonus:["Gold & Silver Pawn Shop (Pawn Stars): <a href='https://maps.google.com/?q=713+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89101' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 713 S Las Vegas Blvd"],
-region:"Foreste & San Francisco",
+region:"California",
 gmaps:"https://maps.google.com/?q=Valle+della+Morte,+California,+Stati+Uniti",
 phaseId:"phase4"},
 
@@ -228,11 +228,11 @@ sunrise:"06:16", // ok
 sunset:"19:46", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Cedar Lodge",
-desc:"Partenza in direzione Giant Forest dove c’è il General Sherman Tree, da ingresso sud tramite Ash Mountain Entrance dove c’è il Foothills Visitor Center. Lungo la strada valutare se prima fare tappa a Tunnel Log e Moro Rock (350 gradini per raggiungere punto panoramico). Dalla zona del General Sherman Tree parte il Congress Trail, una sorta di museo a cielo aperto dove è possibile aggirarsi tra gli altri maestosi alberi della Giant Forest: è un semplice loop trail della durata di circa 3 miglia, occorre circa 1 h per farlo tutto (valutare). Proseguire in direzione Yosemite National Park",
-logistics:"Parcheggio hotel Bakersfield. Non lasciare mai valigie visibili in auto durante le soste.",
+desc:"Partenza in direzione Giant Forest dove c’è il <strong>General Sherman Tree</strong>, da ingresso sud tramite Ash Mountain Entrance dove c’è il Foothills Visitor Center. Lungo la strada valutare se prima fare tappa a <strong>Tunnel Log</strong> e <strong>Moro Rock</strong> (350 gradini per raggiungere punto panoramico) <br>Dalla zona del General Sherman Tree parte il <strong>Congress Trail</strong>, una sorta di museo a cielo aperto dove è possibile aggirarsi tra gli altri maestosi alberi della Giant Forest: è un semplice loop trail della durata di circa 3 miglia, occorre circa 1 h per farlo tutto <br>Proseguire in direzione Yosemite National Park",
+//logistics:"Parcheggio hotel Bakersfield. Non lasciare mai valigie visibili in auto durante le soste.",
 food:["Cedar House Restaurant","Canyon Bar and Grill"],
 pranzo:["Totem Market & Gifts (Three Rivers 5’ min in auto)","Lodgepole Market (dentro al parco)"],
-region:"Foreste & San Francisco",
+region:"California",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+di+Sequoia+California,+Stati+Uniti",
 phaseId:"phase5"},
 
@@ -246,11 +246,11 @@ sunrise:"06:17", // ok
 sunset:"19:56", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"San Remo Hotel",
-desc:"Partenza in auto in direzione Tunnel View (distanza 30’) poi verso Glacier Point (distanza 17’) e tappa al punto panoramico Washburn Point. Valutare se fare Cook's Meadow Loop (1,6 km a/r - 45 minuti) con partenza fermata n. 6 (circa 8’ in auto da Glacier Point). Vicino è raggiungibile a piedi anche Sentinel Bridge (5-10 minuti). Altro possibile sentiero El Capitan Meadow (5-10 minuti): dai punti sopra necessario spostamento in auto, comunque in direzione verso San Francisco. Proseguire in direzione San Francisco. La sera a spasso per San Francisco zona Fisherman's Wharf. Da non perdere: Golden Gate Bridge (da Golden Gate View Point o da Baker Beach o Marshall’s Beach) e Pier 39",
-logistics:"Strade di montagna tortuose ma asfaltate. Evitare percorsi sterrati GPS. Parcheggi interni si riempiono in fretta: entrare la mattina presto.",
+desc:"Partenza in auto in direzione <strong>Tunnel View</strong> (distanza 30’) poi verso <strong>Glacier Point</strong> (distanza 17’) e tappa al punto panoramico <strong>Washburn Point</strong> <br> Valutare se fare <strong>Cook's Meadow Loop</strong> (1,6 km a/r - 45 minuti) con partenza fermata n. 6 della navetta (circa 8’ in auto da Glacier Point). Vicino è raggiungibile a piedi anche <strong>Sentinel Bridge</strong> (durata 5-10 minuti) <br> Altro possibile sentiero <strong>El Capitan Meadow</strong> (durata 5-10 minuti): dai punti sopra necessario spostamento in auto, comunque in direzione verso San Francisco <br> Proseguire in direzione San Francisco. La sera a spasso per San Francisco zona <strong>Fisherman's Wharf</strong> <br> Da non perdere: <strong>Golden Gate Bridge</strong> (da Golden Gate View Point o da Baker Beach o Marshall’s Beach) e <strong>Pier 39</strong>",
+//logistics:"Strade di montagna tortuose ma asfaltate. Evitare percorsi sterrati GPS. Parcheggi interni si riempiono in fretta: entrare la mattina presto.",
 food:["Scoma’s Restaurant (tipico pesce)","Historic Seafood Stands at Fisherman’s Wharf (lungo Taylor Street)"],
 pranzo:["El Portal Market (per strada in direzione parco)"],
-region:"Foreste & San Francisco",
+region:"California",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+di+Yosemite+California,+Stati+Uniti",
 phaseId:"phase5"},
 
@@ -265,10 +265,10 @@ sunset:"19:33", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Ramada by Wyndham Redondo Beach",
 desc:"Sveglia presto e ultimo giro per San Francisco. Vista Golden Gate Bridge e Pier 39 (se non visti il giorno prima) <br> Direzione Los Angeles/ Redondo Beach tramite Highway 1 con possibili tappe lungo la costa:<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Monterey (Lone Cypress)</li><li>Carmel by the Sea</li><li>Bixby Creek Bridge</li><li>Big Sur</li><li>McWay Falls View Point</li><li>Morro Bay (Morro Rock)</li><li>Santa Barbara</li><li>Malibù (Malibu Pier)</li></ul> Arrivo a Redondo Beach in serata, hotel e cena",
-logistics:"Yosemite estremamente affollato in agosto. Parcheggiare nei parcheggi della Valley e usare navette interne gratuite.",
+//logistics:"Yosemite estremamente affollato in agosto. Parcheggiare nei parcheggi della Valley e usare navette interne gratuite.",
 food:["Old Tony’s","Kincaid’s Fish","Chop & Steakhouse"],
 pranzo:["Per pranzo tappa lungo la costa in direzione Redondo Beach"],
-region:"San Francisco & Costa Californiana",
+region:"California",
 gmaps:"https://maps.google.com/?q=Golden+Gate+Bridge+Vista+Point+San+Francisco,+California,+Stati+Uniti",
 phaseId:"phase5"},
 
@@ -284,14 +284,9 @@ fuso:"Pacific Time (GMT-7)",
 hotel:"A bordo del volo di rientro",
 desc:"A spasso per Redondo Beach Pier (visita al Redondo Coﬀee & Bait Shop). Trasferimento in aeroporto e riconsegna auto. Volo LAX ➔ Londra ore 15:45",
 logistics:"CRITICO: a San Francisco non lasciate MAI bagagli in auto nemmeno 5 minuti. Andare direttamente all'Hertz e poi all'hotel a piedi.",
-food:[""],
+food:["Cena a bordo dell'aereo"],
 pranzo:["Redondo Coﬀee & Bait Shop"],
-region:"Costa Californiana",
+region:"California",
 gmaps:"https://maps.google.com/?q=Aeroporto+Internazionale+di+Los+Angeles",
 phaseId:"phase5"}
-
-//{day:17,date:"Sabato 22/08/2026",title:"San Francisco (Sausalito)",route:"Ferry/Traghetto/Piedi",km:15,time:"Tempi variabili",sunrise:"06:24",sunset:"20:00",fuso:"Pacific Time (GMT-7)",hotel:"Timbri Hotel San Francisco - 33 Turk St",desc:"Opzione panoramica traghetto: Ferry Building, Embarcadero, Fisherman's Wharf, traghetto per Sausalito con vista Golden Gate dal mare.",logistics:"Muoversi a piedi e mezzi pubblici. Ferry Terminal: arrivare con anticipo.",food:["Greens Restaurant (Storico vegetariano a Fort Mason, vista golfo)","Ferry Building: cibo veg d'asporto","Wildseed SF (Cucina vegetale alto livello)"],pranzo:["Rainbow Grocery SF (Paradiso bio, naturale e vegano)"],region:"Foreste & San Francisco",gmaps:"https://maps.google.com/?q=Timbri+Hotel+San+Francisco",phaseId:"phase5"},
-//{day:18,date:"Martedì 18/08/2026",title:"San Francisco Città",route:"Esplorazione Quartieri (No Auto)",km:10,time:"Piedi, Cable Car e bus",sunrise:"06:25",sunset:"19:58",fuso:"Pacific Time (GMT-7)",hotel:"Timbri Hotel San Francisco",desc:"Quartieri celebri: Union Square, Chinatown, North Beach, Coit Tower, Lombard Street, Fisherman's Wharf. Cable Car la mattina presto per evitare code. Pomeriggio: Painted Ladies o Mission District.",logistics:"Attenzione alle pendenze di SF. Alternare camminata con autobus o brevi Uber.",food:["Nourish Cafe (Insalate e bowl biologiche)","Shizen Vegan Sushi (seconda chance!)","Golden Era Vegan"],pranzo:["Trader Joe's / Target vicino hotel"],region:"Foreste & San Francisco",gmaps:"https://maps.google.com/?q=Lombard+Street+San+Francisco",phaseId:"phase5"},
-//{day:19,date:"Lunedì 19/08/2026",title:"Alcatraz + San Francisco",route:"Pier 33 ➔ Alcatraz Island ➔ SF",km:10,time:"Ferry per Alcatraz + Piedi",sunrise:"06:26",sunset:"19:57",fuso:"Pacific Time (GMT-7)",hotel:"Timbri Hotel San Francisco",desc:"Tour Alcatraz ore 11:00 (già prenotato). Arrivare a Pier 33 30-45 min prima. Dopo il tour, pranzo all'Embarcadero. Pomeriggio libero per shopping o Exploratorium esterno.",logistics:"Pier 33: a piedi, tram storico linea F o Uber dall'hotel.",food:["Pranzo chioschi biologici Ferry Building","Wildseed SF (Ultima cena americana plant-based)"],pranzo:["CVS / Walgreens per snack ultimo minuto"],region:"Foreste & San Francisco",gmaps:"https://maps.google.com/?q=Alcatraz+Landing+Pier+33",phaseId:"phase5"},
-//{day:20,date:"Martedì 20/08/2026",title:"Rientro in Italia",route:"San Francisco Centro ➔ SFO Aeroporto",km:22,time:"30-60 min o BART",sunrise:"06:27",sunset:"19:55",fuso:"Pacific Time (GMT-7)",hotel:"A bordo del volo di rientro",desc:"Ultima mattina a San Francisco. Volo SFO ➔ Lisbona ore 16:30. Presentarsi a SFO entro le 13:30. Lasciare il centro entro le 12:30.",logistics:"Nessun parcheggio. Trasferimento a SFO: taxi, Uber o BART se comoda con valigie.",food:["Pranzo leggero in hotel o in aeroporto","Comprare snack vegani prima dei controlli SFO"],pranzo:["Target o farmacia per snack da viaggio"],region:"Trasferimento",gmaps:"https://maps.google.com/?q=San+Francisco+International+Airport",phaseId:"phase5"}
 ];
