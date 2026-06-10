@@ -42,9 +42,9 @@ const phaseColors = {
 const phaseNames = {
   phase1: 'Los Angeles',
   phase2: 'Route 66',
-  phase3: 'I Parchi Rossi',
+  phase3: 'I Parchi',
   phase4: 'Las Vegas & Death Valley',
-  phase5: 'SFO e costa californiana'
+  phase5: 'Foreste, SFO e Costa'
 };
 
 const phaseIcons = {
