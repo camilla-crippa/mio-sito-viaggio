@@ -44,7 +44,7 @@ const phaseNames = {
   phase2: 'Route 66',
   phase3: 'I Parchi',
   phase4: 'Las Vegas & Death Valley',
-  phase5: 'Foreste, SFO e Costa'
+  phase5: 'Foreste, SFO & Costa'
 };
 
 const phaseIcons = {
