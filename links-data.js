@@ -2,9 +2,9 @@
 const linksData = {
   1: {
     hotelGmaps: "https://maps.google.com/?q=Hotel+Ziggy+on+Sunset",
-    parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Valet parking dell'hotel </li> <li> Griffith Observatory</li> </ul>",
+    parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Valet parking dell'hotel </li> <li> Griffith Observatory</li> </ul> Possibilità di arrivare all'Osservatorio in auto (da hotel circa 25') oppure con navetta da Vermont / Sunset (circa 18'). Valutare in base all'orario di partenza",
     parkingGmaps: [
-      { name: "Griffith Observatory", url: "https://maps.google.com/?q=W.+Observatory+Road+(Drop-Off+Only)+Los+Angeles+CA+90027+Stati+Uniti" }
+      { name: "Griffith Observatory", url: "https://maps.google.com/?q=34.1213621,-118.2991396" }
     ],
     parkingCost: "$70/giorno hotel + $10/h Griffith Observatory",
     routeGmaps: "https://www.google.com/maps/dir/Aeroporto+Internazionale+di+Los+Angeles,+1+World+Wy,+Los+Angeles,+CA+90045,+Stati+Uniti/Hotel+Ziggy+on+Sunset,+8462+Sunset+Blvd,+West+Hollywood,+CA+90069,+Stati+Uniti/Osservatorio+Griffith,+2800+E+Observatory+Rd,+Los+Angeles,+CA+90027,+Stati+Uniti",
