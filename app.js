@@ -10,7 +10,7 @@ const dayPhotos = {
   8: 'photos/day-brycezion.png',
   9: 'photos/day9-vegas.jpg',
   10: 'photos/day-valleyoffire.png',
-  11: 'photos/day-deathvalley.png',
+  11: 'photos/day-deathvalley.jpeg',
   12: 'photos/day12-sequoia.jpg',
   13: 'photos/day13-yosemite.jpg',
   14: 'photos/day14-sanfrancisco.jpg',
