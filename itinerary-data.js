@@ -3,7 +3,7 @@ const itineraryData = [
 date:"Giovedì 06/08/2026",
 title:"Arrivo a Los Angeles",
 route:"LAX ➔ West Hollywood",
-km:24,
+km:37,
 time:"1h",
 sunrise:"06:08", // ok
 sunset:"19:48", // ok
@@ -22,7 +22,7 @@ phaseId:"phase1"},
 date:"Venerdì 07/08/2026",
 title:"Beverly Hills, Rodeo Drive, Santa Monica & Venice Beach",
 route:"West Hollywood ➔ Beverly Hills ➔ Rodeo Drive ➔ Santa Monica ➔ Venice Beach ➔ West Hollywood",
-km:90,
+km:48,
 time:"1h",
 sunrise:"06:09", // ok
 sunset:"19:47", // ok
@@ -40,8 +40,8 @@ phaseId:"phase1"},
 date:"Sabato 08/08/2026",
 title:"Route 66 ➔ Kingman",
 route:"Los Angeles ➔ Barstow ➔ Amboy ➔ Oatman ➔ Kingman",
-km:535,
-time:"5h45 + soste",
+km:542,
+time:"5h45",
 sunrise:"06:10", // ok
 sunset:"19:31", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -59,7 +59,7 @@ date:"Domenica 09/08/2026",
 title:"Kingman ➔ Grand Canyon South Rim",
 route:"Kingman ➔ Selingman ➔ Williams ➔ Grand Canyon (Tramonto)",
 km:305,
-time:"3h15 + soste",
+time:"3h20",
 sunrise:"05:52", //ok
 sunset:"19:24", //ok
 fuso:"Pacific Time (GMT-7)",
@@ -76,8 +76,8 @@ phaseId:"phase2"},
 date: "Lunedì 10/08/2026",
 title: "Grand Canyon South Rim ➔ Monument Valley",
 route: "Grand Canyon South Rim ➔ Forest Gump Point ➔ Monument Valley",
-km: 281,
-time: "3h di viaggio",
+km: 344,
+time: "4h",
 sunrise: "05:43", // ok
 sunset: "20:17", // ok
 fuso: "Navajo Nation (+1h)",
@@ -95,8 +95,8 @@ phaseId: "phase3"
 date:"Martedì 11/08/2026",
 title:"Monument Valley ➔ Horseshoe Bend & Page",
 route:"Monument Valley ➔ Horseshoe Bend ➔ Page",
-km:195,
-time:"2h",
+km:249,
+time:"4h",
 sunrise:"06:34", // ok
 sunset:"19:21", // ok
 fuso:"Rientro fuso Arizona (-1h)",
@@ -113,8 +113,8 @@ phaseId:"phase3"},
 date:"Mercoledì 12/08/2026",
 title:"Page ➔ Bryce Canyon",
 route:"Page ➔ Bryce Canyon",
-km:243,
-time:"2h35 + soste",
+km:275,
+time:"3h28",
 sunrise:"06:41", // ok
 sunset:"20:24", // ok
 fuso:"Mountain Time (Utah) (+1h)",
@@ -131,8 +131,8 @@ phaseId:"phase3"},
 date:"Giovedì 13/08/2026",
 title:"Bryce Canyon ➔ Zion National Park",
 route:"Bryce Canyon ➔ Zion National Park",
-km:92,
-time:"1h",
+km:165,
+time:"2h30",
 sunrise:"06:43", // ok
 sunset:"20:18", // ok
 fuso:"Mountain Time (Utah)",
@@ -149,8 +149,8 @@ phaseId:"phase3"},
 date:"Venerdì 14/08/2026",
 title:"Zion National Park ➔ Las Vegas",
 route:"Zion National Park ➔ Las Vegas",
-km:270,
-time:"2h40 + soste",
+km:318,
+time:"3h45",
 sunrise:"06:43", // ok
 sunset:"19:31", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -167,8 +167,8 @@ phaseId:"phase3"},
 date:"Sabato 15/08/2026",
 title:"Las Vegas & Valley of Fire",
 route:"Esplorazione Strip & Resort",
-km:315,
-time:"3h30 + punti panoramici",
+km:280,
+time:"4h15",
 sunrise:"05:59", // ok
 sunset:"19:30", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -190,8 +190,8 @@ phaseId:"phase4"},
 date:"Domenica 16/08/2026",
 title:"Las Vegas ➔ Death Valley",
 route:"Las Vegas ➔ Red Rock Canyon ➔ Death Valley",
-km:199,
-time:"2h15 + sosta panoramica",
+km:286,
+time:"3h50",
 sunrise:"06:00", // ok
 sunset:"19:37", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -208,8 +208,8 @@ phaseId:"phase4"},
 date:"Lunedì 17/08/2026",
 title:"Death Valley ➔ Sequoia National Park",
 route:"Death Valley ➔ Sequoia National Park",
-km:524,
-time:"5h30",
+km:629,
+time:"7h51",
 sunrise:"06:08", // ok
 sunset:"19:42", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -226,8 +226,8 @@ phaseId:"phase4"},
 date:"Martedì 18/08/2026",
 title:"Sequoia National Park ➔ Yosemite National Park",
 route:"Sequoia National Park ➔ Yosemite National Park",
-km:360,
-time:"4h",
+km:310,
+time:"5h",
 sunrise:"06:16", // ok
 sunset:"19:46", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -244,8 +244,8 @@ phaseId:"phase5"},
 date:"Mercoledì 19/08/2026",
 title:"Yosemite National Park ➔ San Francisco",
 route:"Yosemite National Park ➔ San Francisco",
-km:305,
-time:"3h40",
+km:429,
+time:"6h40",
 sunrise:"06:17", // ok
 sunset:"19:56", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -262,8 +262,8 @@ phaseId:"phase5"},
 date:"Giovedì 20/08/2026",
 title:"San Francisco ➔ Redondo Beach",
 route:"San Francisco ➔ Highway 1 ➔ Redondo Beach",
-km:757,
-time:"7h + soste",
+km:733,
+time:"9h",
 sunrise:"06:30", // ok
 sunset:"19:33", // ok
 fuso:"Pacific Time (GMT-7)",
@@ -280,7 +280,7 @@ phaseId:"phase5"},
 date:"Venerdì 21/08/2026",
 title:"Rientro in Italia",
 route:"Redondo Beach ➔ LAX Aereoporto ➔ Milano",
-km:10,
+km:15,
 time:"20min + volo",
 sunrise:"06:19", // ok
 sunset:"19:32", // ok
