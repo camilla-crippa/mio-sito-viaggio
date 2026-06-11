@@ -178,8 +178,8 @@ desc:"Raggiungere la <strong>Valley of Fire</strong> tramite <strong>Lake Mead N
 food:["Virgil's Real BBQ","Fogo de Chão Brazilian Steakhouse","Gilley's Saloon","Dance Hall & Bar-B-Que","Hash House A Go Go (anche colazione)","Hot N Juicy Crawfish","Nacho Daddy","Outback Steakhouse","In-N-Out Burger"],
 pranzo:["In base al programma della giornata"],
 bonus: [
-  "Gold & Silver Pawn Shop (Pawn Stars): <a href='https://maps.google.com/?q=713+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89101' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 713 S Las Vegas Blvd",
-  "Cartello Welcome to Las Vegas: <a href='https://maps.google.com/?q=Welcome+to+Fabulous+Las+Vegas+Sign' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 5100 Las Vegas Blvd S",
+  "Gold & Silver Pawn Shop: <a href='https://maps.google.com/?q=713+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89101' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 713 S Las Vegas Blvd",
+  "Welcome to Las Vegas: <a href='https://maps.google.com/?q=Welcome+to+Fabulous+Las+Vegas+Sign' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 5100 Las Vegas Blvd S",
   "Meow Wolf - Omega Mart (Supermercato surreale): <a href='https://maps.google.com/?q=Meow+Wolf+Las+Vegas+Omega+Mart' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — AREA15, 3215 S Rancho Dr"
 ],
 region:"Nevada",
