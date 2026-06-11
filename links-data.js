@@ -55,7 +55,7 @@ const linksData = {
     hotelGmaps: "https://maps.google.com/?q=Bryce+View+Lodge",
     parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Parcheggio hotel gratuito</li> </ul>",
     parkingCost: "Gratis",
-    youtube: "https://youtube.com/shorts/_kXeNFCPw_o",
+    //youtube: "https://youtube.com/shorts/_kXeNFCPw_o",
     routeGmaps: "https://www.google.com/maps/dir/Knights+Inn+Page,+121+S+Lake+Powell+Blvd,+Page,+AZ+86040,+Stati+Uniti/Lower+Antelope+Canyon+Parking,+Indn,+Route+222,+Page,+AZ+86040,+Stati+Uniti/Big+Lake+Trading+Post,+1501+Coppermine+Rd,+Page,+AZ+86040,+Stati+Uniti/Glen+Canyon+Dam+Overlook,+Overlook+Dr,+Page,+AZ+86040,+Stati+Uniti/Wahweap+Overlook,+1000+US-89,+Page,+AZ+86040,+Stati+Uniti/Bryce+Canyon+National+Park+Sunset+Point,+Sunset+Pt+Rd,+Bryce+Canyon+City,+UT+84764,+Stati+Uniti/Bryce+View+Lodge,+105+Center+St,+Bryce+Canyon+City,+UT+84764,+Stati+Uniti"
   },
   8: {

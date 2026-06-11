@@ -155,7 +155,7 @@ sunrise:"06:43", // ok
 sunset:"19:31", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Horseshoe Las Vegas",
-desc:"Partenza in auto in direzione <strong>Canyon Overlook Trail</strong> per raggiungere il punto panoramico (a/r a piedi 1h circa). Percorrere la <strong>Zion Mount Carmel Highway</strong> e: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Opzione 1: fare la <strong>Zion Canyon Scenic Drive</strong> con navetta (partenza da Visitor Center South Entrance - 9 fermate - a/r tempo di percorrenza 90’)</li><li>Opzione 2: tappa a <strong>Kolob Canyon Viewpoint</strong> (distanza in auto da Canyon Overlook Trail 1 h 10’ circa, 80 km) per vista dal punto panoramico e poi direzione Las Vegas (2 h 28’)</li><li>Opzione 3: direzione <strong>Las Vegas</strong> (2 h 40’) (orologio -1)</li></ul> Benvenuti a Las Vegas!<br>Arrivo in hotel, a spasso per la Strip e cena",
+desc:"Partenza in auto in direzione <strong>Canyon Overlook Trail</strong> per raggiungere il punto panoramico (a/r a piedi 1h circa). Percorrere la <strong>Zion Mount Carmel Highway</strong> e: <ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Opzione 1: fare la <strong>Zion Canyon Scenic Drive</strong> con navetta (partenza da Visitor Center South Entrance - 9 fermate - a/r tempo di percorrenza 90’)</li><li>Opzione 2: tappa a <strong>Kolob Canyon Viewpoint</strong> (distanza in auto da Canyon Overlook Trail 1 h 10’ circa, 80 km) per vista dal punto panoramico e poi direzione Las Vegas (2 h 28’)</li><li>Opzione 3: direzione <strong>Las Vegas</strong> (2 h 40’) (orologio -1)</li></ul> Benvenuti a Las Vegas!<br>Arrivo in hotel, a spasso per la strip e cena",
 //logistics:"Parcheggio meeting point tour Canyon X. Kanab: parcheggio hotel gratuito.",
 food:["Virgil's Real BBQ","Fogo de Chão Brazilian Steakhouse","Gilley's Saloon","Dance Hall & Bar-B-Que","Hash House A Go Go (anche colazione)","Hot N Juicy Crawfish","Nacho Daddy","Outback Steakhouse","In-N-Out Burger"],
 pranzo:["White Mountain Trading Post (di fianco all’hotel)","Sol Foods Supermarket (a Springdale)"],
@@ -173,10 +173,15 @@ sunrise:"05:59", // ok
 sunset:"19:30", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Horseshoe Las Vegas",
-desc:"Raggiungere la <strong>Valley of Fire</strong> tramite <strong>Lake Mead National Recreation Area</strong>. Tappa a <strong>Elephant Rock</strong> con trail di 200 metri, proseguire per la <strong>White Domes Road/ Mouse’s Tank Road</strong> e <strong>Fire Canyon Road</strong> con punti panoramici e tappa ad <strong>Arch Rock</strong> in uscita di ritorno a Las Vegas. (Consigliato partire presto, tempo richiesto mezza giornata). Pomeriggio relax in piscina!<br>Da vedere in città: Las Vegas Sign, Gold & Silver Pawn Shop, Meow Wolf Las Vegas' Omega Mart <br> Cena e serata sulla Strip",
+desc:"Raggiungere la <strong>Valley of Fire</strong> tramite <strong>Lake Mead National Recreation Area</strong>. Tappa a <strong>Elephant Rock</strong> con trail di 200 metri, proseguire per la <strong>White Domes Road/ Mouse’s Tank Road</strong> e <strong>Fire Canyon Road</strong> con punti panoramici e tappa ad <strong>Arch Rock</strong> in uscita di ritorno a Las Vegas. (Consigliato partire presto, tempo richiesto mezza giornata)<br>Pomeriggio relax in piscina, a seguire cena e serata sulla Strip",
 //logistics:"Bryce Canyon: parcheggi viewpoint congestionati in estate; usare shuttle gratuito del parco.",
 food:["Virgil's Real BBQ","Fogo de Chão Brazilian Steakhouse","Gilley's Saloon","Dance Hall & Bar-B-Que","Hash House A Go Go (anche colazione)","Hot N Juicy Crawfish","Nacho Daddy","Outback Steakhouse","In-N-Out Burger"],
 pranzo:["In base al programma della giornata"],
+bonus: [
+  "Gold & Silver Pawn Shop (Pawn Stars): <a href='https://maps.google.com/?q=713+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89101' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 713 S Las Vegas Blvd",
+  "Cartello Welcome to Las Vegas: <a href='https://maps.google.com/?q=Welcome+to+Fabulous+Las+Vegas+Sign' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 5100 Las Vegas Blvd S",
+  "Meow Wolf - Omega Mart (Supermercato surreale): <a href='https://maps.google.com/?q=Meow+Wolf+Las+Vegas+Omega+Mart' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — AREA15, 3215 S Rancho Dr"
+],
 region:"Nevada",
 gmaps:"https://maps.google.com/?q=Elephant+Rock+Valley+of+Fire",
 phaseId:"phase4"},
@@ -213,7 +218,6 @@ desc:"Sveglia presto e alba a <strong>Zabriskie Point</strong> (10’ in auto da
 //logistics:"Auto parcheggiata in hotel. Muoversi con Monorail, a piedi o Uber.",
 food:["The Gateway Restaurant & Lodge"],
 pranzo:["Per pranzo tappa lungo la strada in direzione Three Rivers"],
-bonus:["Gold & Silver Pawn Shop (Pawn Stars): <a href='https://maps.google.com/?q=713+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89101' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 713 S Las Vegas Blvd"],
 region:"California",
 gmaps:"https://maps.google.com/?q=Valle+della+Morte,+California,+Stati+Uniti",
 phaseId:"phase4"},

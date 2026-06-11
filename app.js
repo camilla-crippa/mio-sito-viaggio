@@ -372,10 +372,17 @@ function renderDayContent(d) {
   // Bonus stops
   var bonusItems = '';
   if (d.bonus) {
-    d.bonus.forEach(function(b) { bonusItems += '<div style="padding:4px 0">➕ ' + b + '</div>'; });
+    // Ho ridotto il font-size dei singoli elementi a 11px e impostato l'interlinea (line-height)
+    d.bonus.forEach(function(b) { 
+      bonusItems += '<div style="padding:3px 0; font-size:11px; line-height:1.35;">📌 ' + b + '</div>'; 
+    });
   }
   if (bonusItems) {
-    html += '<div class="food-box" style="margin-top:8px;background:#fff9e6;border:1px solid #e8d9a0"><div class="food-title">📍 Da non perdere</div>' + bonusItems + '</div>';
+    // Ho aggiunto "grid-column: span 2; width: 100%;" per farlo allargare a tutta pagina
+    html += '<div class="food-box" style="margin-top:8px; background:#fff9e6; border:1px solid #e8d9a0; font-size:11px; grid-column: span 2; width: 100%;">' +
+              '<div class="food-title" style="font-size:11px; font-weight:700; margin-bottom:4px;">📍 Da non perdere</div>' + 
+              bonusItems + 
+            '</div>';
   }
   html += '</div>';
 
