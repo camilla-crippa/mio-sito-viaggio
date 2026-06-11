@@ -15,7 +15,7 @@ const dayPhotos = {
   13: 'photos/day13-yosemite.jpg',
   14: 'photos/day14-sanfrancisco.jpg',
   15: 'photos/day-redondobeach.png',
-  16: 'photos/day16-return.jpg'
+  16: 'photos/day-return.jpeg'
 
   //17: 'photos/day17-sausalito.jpg',
   //18: 'photos/day18-sf.jpg',
