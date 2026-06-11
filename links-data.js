@@ -23,11 +23,11 @@ const linksData = {
   },
   3: {
     hotelGmaps: "https://maps.google.com/?q=Motel+6+Kingman+AZ+-+Route+66+West+424+W+Beale+St+Kingman+AZ+86401+Stati+Uniti",
-    parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Hollywood Public Parking </li> <li> Route 66: parcheggi gratuiti lungo strada in tutte le cittadine</li> <li> Parcheggio hotel gratuito</li> </ul>",
+    parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Parking for Hollywood and Highland Center </li> <li> Route 66: parcheggi gratuiti lungo strada in tutte le cittadine</li> <li> Parcheggio hotel gratuito</li> </ul>",
     parkingGmaps: [
-      { name: "Hollywood Public Parking", url: "https://maps.google.com/?q=6801+Hollywood+Blvd+Los+Angeles+CA+90028" }
+      { name: "Parking for Hollywood and Highland Center", url: "https://maps.google.com/?q=Parking+for+Hollywood+and+Highland+Center,+Hollywood,+CA+90028,+Stati+Uniti" }
     ],
-    parkingCost: "Hollywood Public Parking a pagamento",
+    parkingCost: "Parking for Hollywood and Highland Center a pagamento",
     routeGmaps: "https://www.google.com/maps/dir/Hotel+Ziggy+on+Sunset,+8462+Sunset+Blvd,+West+Hollywood,+CA+90069,+Stati+Uniti/Hollywood+Walk+of+Fame,+6255+Sunset+Blvd+%23150,+Hollywood,+CA+90028,+Stati+Uniti/TCL+Chinese+Theatre,+6925+Hollywood+Blvd,+Hollywood,+CA+90028,+Stati+Uniti/Dolby+Theatre,+1810+Highland+Ave,+Los+Angeles,+CA+90028,+Stati+Uniti/Barstow,+California,+Stati+Uniti/Roy's+Motel+%26+Cafe,+87520+National+Trails+Hwy,+Amboy,+CA+92304,+Stati+Uniti/Oatman,+Arizona,+Stati+Uniti/Motel+6+Kingman,+AZ+-+Route+66+West,+424+W+Beale+St,+Kingman,+AZ+86401,+Stati+Uniti"
   },
   4: {
