@@ -16,11 +16,6 @@ const dayPhotos = {
   14: 'photos/day14-sanfrancisco.jpg',
   15: 'photos/day-redondobeach.png',
   16: 'photos/day-return.jpeg'
-
-  //17: 'photos/day17-sausalito.jpg',
-  //18: 'photos/day18-sf.jpg',
-  //19: 'photos/day19-alcatraz.jpg',
-  //20: 'photos/day20-return.jpg'
 };
 
 const phasePhotos = {
@@ -49,7 +44,7 @@ const phaseNames = {
 
 const phaseIcons = {
   phase1: '🌴',
-  phase2: '🌵',
+  phase2: '🚗',
   phase3: '🏜️',
   phase4: '🎲',
   phase5: '🌉'
