@@ -28,7 +28,7 @@ sunrise:"06:09", // ok
 sunset:"19:47", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Hotel Ziggy on Sunset West Hollywood",
-desc:"Partenza dall’hotel in direzione <strong>Beverly Hills</strong> (vista scritta Hollywood) e <strong>Rodeo Drive</strong> poi verso <strong>Santa Monica Pier</strong> per pranzo e passeggiata fino a <strong>Venice Beach</strong>. Tramonto a Santa Monica (distanza hotel - Santa Monica circa 25’) <br>Rientro in hotel, cena e a spasso per la città",
+desc:"Partenza dall’hotel in direzione <strong>Beverly Hills</strong> e <strong>Rodeo Drive</strong> poi verso <strong>Santa Monica Pier</strong> per pranzo e passeggiata fino a <strong>Venice Beach</strong>. Tramonto a Santa Monica (distanza hotel - Santa Monica circa 25’) <br>Rientro in hotel, cena e a spasso per la città",
 //logistics:"Venice Beach Parking Lot o lotti su Pacific Ave; a Santa Monica usare Santa Monica Place Parking o Structure 8; a Malibu usare parcheggi ufficiali spiaggia.",
 food:["Saddle Ranch Chop House","Mels Drive-In","Carney's Restaurant"],
 pranzo:["Pier Burger","The Albright"],
@@ -46,7 +46,7 @@ sunrise:"06:10", // ok
 sunset:"19:31", // ok
 fuso:"Pacific Time (GMT-7)",
 hotel:"Motel 6-Kingman",
-desc:"A spasso per la <strong>Walk of Fame</strong> (Dolby Theatre, TCL Chinese Theatre) prima della partenza in mattinata in direzione <strong>Kingman</strong> con tappe sulla <strong>Route 66</strong> (<strong>Barstow</strong> città fantasma, <strong>Amboy, Oatman</strong>)<br> Percorrere la <strong>National Trails Hwy</strong> (passando per <strong>Amboy Roy's Motel & Cafe</strong>) e la <strong>Oatman Highway</strong> con tappa a <strong>Oatman Hotel Restaurant & Bar</strong><br>Arrivo a Kingman, hotel e cena",
+desc:"A spasso per la <strong>Walk of Fame</strong> (Dolby Theatre, TCL Chinese Theatre) e foto scritta <strong>Hollywood</strong> (Lake Hollywwod Park) prima della partenza in mattinata in direzione <strong>Kingman</strong> con tappe sulla <strong>Route 66</strong> (<strong>Barstow</strong> città fantasma, <strong>Amboy, Oatman</strong>)<br> Percorrere la <strong>National Trails Hwy</strong> (passando per <strong>Amboy Roy's Motel & Cafe</strong>) e la <strong>Oatman Highway</strong> con tappa a <strong>Oatman Hotel Restaurant & Bar</strong><br>Arrivo a Kingman, hotel e cena",
 //logistics:"Osservatorio Griffith: lasciare auto vicino al Teatro Greco. Hollywood: Hollywood & Highland Parking (6801 Hollywood Blvd). Beverly Hills: Parking 461 N Bedford Dr (prime 2h gratis). Bus Sightseeing: fermata Paramount Studios o Dolby Theatre.",
 food:["Mr D'z Route 66 Diner (anche colazione)","Black Bear Diner Kingman"],
 pranzo:["Pranzo in locale tipico lungo la Route 66"],
