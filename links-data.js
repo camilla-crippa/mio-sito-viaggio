@@ -8,7 +8,7 @@ const linksData = {
     ],
     parkingCost: "$70/giorno hotel + $10/h Griffith Observatory",
     routeGmaps: "https://www.google.com/maps/dir/Aeroporto+Internazionale+di+Los+Angeles,+1+World+Wy,+Los+Angeles,+CA+90045,+Stati+Uniti/Hotel+Ziggy+on+Sunset,+8462+Sunset+Blvd,+West+Hollywood,+CA+90069,+Stati+Uniti/Osservatorio+Griffith,+2800+E+Observatory+Rd,+Los+Angeles,+CA+90027,+Stati+Uniti",
-    rentalGmaps: "https://maps.google.com/?q=LAX+RENTAL+CAR+RETURN+CENTER,+5251+W+98th+St,+Los+Angeles,+CA+90045,+Stati+Uniti",
+    rentalGmaps: "https://maps.google.com/?q=5251+W+98TH+ST+LOS+ANGELES+CA+90045",
     rentalGmapsLabel: "Alamo - 5251 W 98TH ST, Los Angeles, CA 90045"
   },
   2: {
@@ -111,7 +111,7 @@ const linksData = {
     parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Parcheggio dell'hotel e raggiungere molo a piedi (10')</li> <li>Parcheggio Redondo Beach</li> </ul>",
     parkingCost: "Gratis (hotel) | Redondo Beach Parking a pagamento",
     rentalReturnGmaps: "https://maps.google.com/?q=5251+W+98TH+ST+LOS+ANGELES+CA+90045",
-    rentalReturnGmapsLabel: "Alamo LAX - Los Angeles International Airport",
+    rentalReturnGmapsLabel: "Alamo - 5251 W 98TH ST, Los Angeles, CA 90045",
     routeGmaps: "https://www.google.com/maps/dir/Ramada+Limited+Redondo+Beach,+435+S+Pacific+Coast+Hwy,+Redondo+Beach,+CA+90277,+Stati+Uniti/Redondo+Coffee+Shop+and+Bait+%26+Tackle+Shop,+141+Fishermans+Wharf,+Redondo+Beach,+CA+90277,+Stati+Uniti/Aeroporto+Internazionale+di+Los+Angeles,+1+World+Wy,+Los+Angeles,+CA+90045,+Stati+Uniti"
   }
 };
