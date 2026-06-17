@@ -98,7 +98,7 @@ const linksData = {
     hotelGmaps: "https://maps.google.com/?q=San+Remo+Hotel+2237+Mason+St+San+Francisco+CA+94133+Stati+Uniti",
     parking: "<ul style='padding-left: 20px; margin: 8px 0;'><li>Garage convenzionato hotel operativo dalle 7:00 alle 20:00</li> </ul>",
     parkingCost: "$30/giorno",
-    routeGmaps: "https://www.google.com/maps/dir/Yosemite+Cedar+Lodge,+9966+CA-140,+El+Portal,+CA+95318,+Stati+Uniti/Tunnel+View,+California,+Stati+Uniti/Glacier+Point,+California,+Stati+Uniti/Washburn+Point,+5202+Glacier+Point+Rd,+TUOLUMNE+MEADOWS,+CA+95389,+Stati+Uniti/Cook's+Meadow+Loop,+Yosemite+Valley,+CA+95389,+Stati+Uniti/Sentinel+Bridge,+Stati+Uniti,+California,+TUOLUMNE+MEADOWS/El+Capitan+Meadow,+California+95389,+Stati+Uniti/San+Remo+Hotel,+2237+Mason+St,+San+Francisco,+CA+94133,+Stati+Uniti"
+    routeGmaps: "https://www.google.com/maps/dir/Yosemite+Cedar+Lodge,+9966+CA-140,+El+Portal,+CA+95318,+Stati+Uniti/Glacier+Point,+California,+Stati+Uniti/Washburn+Point,+5202+Glacier+Point+Rd,+TUOLUMNE+MEADOWS,+CA+95389,+Stati+Uniti/Tunnel+View,+Wawona+Rd,+California+95389,+Stati+Uniti/Cook's+Meadow+Loop,+Yosemite+Valley,+CA+95389,+Stati+Uniti/Sentinel+Bridge,+Stati+Uniti,+California,+TUOLUMNE+MEADOWS/El+Capitan+Meadow,+California+95389,+Stati+Uniti/San+Remo+Hotel,+2237+Mason+St,+San+Francisco,+CA+94133,+Stati+Uniti"
   },
   15: {
     hotelGmaps: "https://maps.google.com/?q=Ramada+Limited+Redondo+Beach",
