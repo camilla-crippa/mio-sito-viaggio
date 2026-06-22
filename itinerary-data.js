@@ -50,6 +50,7 @@ desc:"A spasso per la <strong>Walk of Fame</strong> (Dolby Theatre, TCL Chinese 
 //logistics:"Osservatorio Griffith: lasciare auto vicino al Teatro Greco. Hollywood: Hollywood & Highland Parking (6801 Hollywood Blvd). Beverly Hills: Parking 461 N Bedford Dr (prime 2h gratis). Bus Sightseeing: fermata Paramount Studios o Dolby Theatre.",
 food:["Mr D'z Route 66 Diner (anche colazione)","Black Bear Diner Kingman"],
 pranzo:["Pranzo in locale tipico lungo la Route 66"],
+bonusDrone: "<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Amboy: dal parcheggio del Roy's Motel & Café (chiedere permesso al motel) in alternativa decollo dal bordo della strada pubblica</li><li>Lungo la strada che porta a Oatman (il passo montano di Sitgreaves Pass) dove non ci sono case o asini nelle vicinanze</li></ul>",
 region:"Arizona",
 gmaps:"https://maps.google.com/?q=Roy's+Motel+%26+Cafe",
 phaseId:"phase2"},
@@ -68,6 +69,7 @@ desc:"Partenza in mattinata in direzione <strong>Grand Canyon</strong> con tappe
 //logistics:"Palm Springs: Downtown Palm Springs Parking. Hotel-parco per tramonto: ~1h senza soste. Evitare lunghe camminate nelle ore centrali per caldo intenso.",
 food:["Maswik Food Court","Arizona Steakhouse","El Tovar Dining Room"],
 pranzo:["Pranzo in locale tipico lungo la Route 66"],
+bonusDrone: "<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Selingman: via principale con tutti i tetti colorati e le scritte vintage (chiedere permesso ai proprietari dei negozi (come allo Snow Cap o al Roadkill Cafe) se il decollo avviene dalle loro proprietà private)</li></ul>",
 region:"Arizona",
 gmaps:"https://maps.google.com/?q=Classic+Cars+on+Route+66",
 phaseId:"phase2"},
@@ -141,6 +143,7 @@ desc:"Sveglia presto e alba a Bryce Canyon a <strong>Sunrise Point</strong>. Gir
 //logistics:"Sunrise Tour: ritrovo 5:15 fuori lobby The View Hotel. Portare Navajo Tribal Park pass ($10/persona). Horseshoe Bend: parcheggio a pagamento, 15-20 min a piedi. Attenzione fuso: lasciando Navajo Nation si guadagna 1h.",
 food:["Thunderbird Restaurant"],
 pranzo:["Ruby's Inn General Store"],
+bonusDrone: "<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Belly of the Dragon: possibilità di volo fuori dal tunnel sopra un canyon sabbioso</li><li>Coral Pink Sand Dunes State Park: bisogna recarsi al Visitor Center e dichiarare al ranger il drone, compilare un modulo e pagare una tassa</li><li>Sand Caves: far volare il drone parallelamente alla parete di roccia per riprendere le aperture delle grotte, non all’interno (possibile perdita di segnale)</li></ul>",
 region:"Utah",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+del+Bryce+Canyon",
 phaseId:"phase3"},
@@ -159,6 +162,7 @@ desc:"Partenza in auto in direzione <strong>Canyon Overlook Trail</strong> per r
 //logistics:"Parcheggio meeting point tour Canyon X. Kanab: parcheggio hotel gratuito.",
 food:["Virgil's Real BBQ","Fogo de Chão Brazilian Steakhouse","Gilley's Saloon","Dance Hall & Bar-B-Que","Hash House A Go Go (anche colazione)","Hot N Juicy Crawfish","Nacho Daddy","Outback Steakhouse","In-N-Out Burger"],
 pranzo:["White Mountain Trading Post (di fianco all’hotel)","Sol Foods Supermarket (a Springdale)"],
+bonusDrone: "<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Virgin River Gorge (Sulla I-15, tra Utah e Arizona): imboccata la I-15 South verso Las Vegas, si attraverserà un tratto di circa 30 km in cui l'autostrada taglia letteralmente in due un canyon strettissimo con pareti di roccia altissime (attenzione al vento)</li></ul>",
 region:"Utah & Nevada",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+di+Zion",
 phaseId:"phase3"},
@@ -182,6 +186,11 @@ bonus: [
   "Welcome to Las Vegas: <a href='https://maps.google.com/?q=Welcome+to+Fabulous+Las+Vegas+Sign' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 5100 Las Vegas Blvd S",
   "Meow Wolf - Omega Mart (Supermercato surreale): <a href='https://maps.google.com/?q=Meow+Wolf+Las+Vegas+Omega+Mart' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — AREA15, 3215 S Rancho Dr"
 ],
+bonusDrone:"<ul style='list-style: none; padding-left: 15px; margin: 5px 0;'>" +
+             "<li style='text-indent: -15px; margin-bottom: 5px;'>✅ Ok</li>" +
+             "<li style='text-indent: -15px; margin-bottom: 5px;'>✅ ok</li>" +
+             "<li style='text-indent: -15px; margin-bottom: 5px;'>❌ Divieto</li>" +
+           "</ul>",
 region:"Nevada",
 gmaps:"https://maps.google.com/?q=Elephant+Rock+Valley+of+Fire",
 phaseId:"phase4"},
@@ -254,6 +263,7 @@ desc:"Partenza in auto verso le 8 in direzione <strong>Glacier Point</strong> (d
 //logistics:"Strade di montagna tortuose ma asfaltate. Evitare percorsi sterrati GPS. Parcheggi interni si riempiono in fretta: entrare la mattina presto.",
 food:["Scoma’s Restaurant (tipico pesce)","Historic Seafood Stands at Fisherman’s Wharf (lungo Taylor Street)"],
 pranzo:["El Portal Market (per strada in direzione parco)"],
+//bonusDrone:"<ul style='list-style: none; padding-left: 15px; margin: 5px 0;'>" + "<li style='text-indent: -15px; margin-bottom: 5px;'>✅ Marin Headlands: dall'altra parte del ponte verso Sausalito (attenzione alle zone FAA)</li>"+"</ul>",
 region:"California",
 gmaps:"https://maps.google.com/?q=Parco+nazionale+di+Yosemite+California,+Stati+Uniti",
 phaseId:"phase5"},
@@ -272,6 +282,7 @@ desc:"Sveglia presto e ultimo giro per San Francisco. Vista Golden Gate Bridge e
 //logistics:"Yosemite estremamente affollato in agosto. Parcheggiare nei parcheggi della Valley e usare navette interne gratuite.",
 food:["Old Tony’s","Kincaid’s Fish","Chop & Steakhouse"],
 pranzo:["Per pranzo tappa lungo la costa in direzione Redondo Beach"],
+bonusDrone:"<ul style='padding-left: 20px; color: #555; font-size: 11px; margin: 8px 0;'><li>Pacifica (Sud di San Francisco): Pacifica State Beach /Linda Mar Beach</li><li>Cayucos Pier: spiaggia di Cayucos State Beach, decollo consentito dalla spiaggia vicino al molo</li><li>Morro Bay: dalla spiaggia a nord del molo di roccia (es. vicino al parcheggio di Coleman Drive o alla spiaggia dei cani di Toro Creek)</li><li>Pismo Beach: Pismo State Beach ha delle restrizioni, ma la zona vicino al molo cittadino consente il volo in molte aree</li><li>Malibù: non si può decollare dall'interno del Point Dume State Beach, si può invece da una zona pubblica fuori dal parco (es. sul marciapiede della strada pubblica) e volare sopra l'oceano</li></ul>",
 region:"California",
 gmaps:"https://maps.google.com/?q=Golden+Gate+Bridge+Vista+Point+San+Francisco,+California,+Stati+Uniti",
 phaseId:"phase5"},

@@ -345,7 +345,7 @@ function renderDayContent(d) {
   html += '<a href="' + routeUrl + '" target="_blank" rel="noopener" class="route-btn">' + routeLabel + '</a>';
 
   // Description
-  html += '<div class="detail-box"><div class="detail-title">🧭 Programma</div><div class="detail-text">' + d.desc + '</div></div>';
+  html += '<div class="detail-box"><div class="detail-title">🗓️ Programma</div><div class="detail-text">' + d.desc + '</div></div>';
 
 
   html += parkingHTML;
@@ -380,6 +380,13 @@ function renderDayContent(d) {
             '</div>';
   }
   html += '</div>';
+
+  if (d.bonusDrone) {
+    html += '<div style="margin-top:10px; background:#f4f9f4; border:1px solid #cce3cc; border-radius:8px; padding:12px; font-size:11px; width: 100%; box-sizing: border-box;">' +
+              '<div style="font-size:11px; font-weight:700; color:#386641; margin-bottom:6px;">🎮 Note Utili & Info Drone</div>' + 
+              '<div style="line-height:1.4; color:#333;">' + d.bonusDrone + '</div>' +
+            '</div>';
+  }
 
   // Hotel
   html += '<div class="hotel-row">🛌 <strong>Alloggio:</strong> ' + hotelHTML + '</div>';
