@@ -186,11 +186,6 @@ bonus: [
   "Welcome to Las Vegas: <a href='https://maps.google.com/?q=Welcome+to+Fabulous+Las+Vegas+Sign' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — 5100 Las Vegas Blvd S",
   "Meow Wolf - Omega Mart (Supermercato surreale): <a href='https://maps.google.com/?q=Meow+Wolf+Las+Vegas+Omega+Mart' target='_blank' rel='noopener' style='color:#e07a5f;font-weight:700'>🗺️ Mappa</a> — AREA15, 3215 S Rancho Dr"
 ],
-bonusDrone:"<ul style='list-style: none; padding-left: 15px; margin: 5px 0;'>" +
-             "<li style='text-indent: -15px; margin-bottom: 5px;'>✅ Ok</li>" +
-             "<li style='text-indent: -15px; margin-bottom: 5px;'>✅ ok</li>" +
-             "<li style='text-indent: -15px; margin-bottom: 5px;'>❌ Divieto</li>" +
-           "</ul>",
 region:"Nevada",
 gmaps:"https://maps.google.com/?q=Elephant+Rock+Valley+of+Fire",
 phaseId:"phase4"},
