@@ -48,27 +48,27 @@
     .home-phase-sub{font-size:0.7rem;color:#888}
     .home-phase-arrow{color:#ccc;font-size:1.2rem}
     
-    /* === NUOVI STILI CSS PER IL COUNTDOWN === */
-    .countdown-wrapper {
-      display: flex;
-      justify-content: center; /* Centra gli elementi */
-      gap: 20px;               /* Spazio tra i blocchi */
-      align-items: center;
-      background: transparent; /* Rende lo sfondo trasparente */
-      border: none;            /* Elimina il bordo */
-      box-shadow: none;        /* Elimina l'ombra */
-      padding: 4px 0;          /* Riduce lo spazio verticale */
-      margin-bottom: 24px;     /* Mantiene la distanza dagli elementi sotto */
-    }
+    /* === STILI CSS PER IL COUNTDOWN === */
     .countdown-header {
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 16px;            /* Carattere aumentato e più visibile */
+      font-weight: 800;
       color: #3d405b;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-top: 16px;
-      margin-bottom: 18px;
+      letter-spacing: 1.5px;      /* Più spaziatura tra le lettere */
+      margin-top: 14px;
+      margin-bottom: 20px;        /* Più spazio tra il titolo e i numeri */
       text-align: center;
+    }
+    .countdown-wrapper {
+      display: flex;
+      justify-content: center;   /* Centra gli elementi */
+      gap: 20px;                 /* Spazio tra i blocchi */
+      align-items: center;
+      background: transparent;   /* Trasparente, senza box */
+      border: none;
+      box-shadow: none;
+      padding: 4px 0;
+      margin-bottom: 28px;       /* Distanza generosa dal testo descrittivo sotto */
     }
     .countdown-item {
       text-align: center;
@@ -222,6 +222,14 @@
 
     <!-- HOME -->
     <div id="panel-home">
+      
+      <!-- === COUNTDOWN IN ALTO === -->
+      <div class="countdown-header">Let's Go ✈️</div>
+      <div id="countdown-container" class="countdown-wrapper">
+        <!-- Verrà popolato dinamicamente da JavaScript -->
+      </div>
+
+      <!-- DESCRIZIONE -->
       <div class="home-section">
         <p class="home-desc">
           <strong>USA On The Road</strong> — 16 giorni, 4 stati, 4.100 chilometri. 
@@ -229,12 +237,6 @@
           le luci di Las Vegas e le foreste millenarie di Sequoia e Yosemite. 
           Un viaggio che attraversa il cuore dell'America, tra natura selvaggia, Route 66 e città leggendarie.
         </p>
-      </div>
-
-      <!-- === AGGIUNTA: IL CONTENITORE DEL COUNTDOWN === -->
-      <div class="countdown-header"> Let's Go ✈️</div>
-      <div id="countdown-container" class="countdown-wrapper">
-        <!-- Verrà popolato dinamicamente da JavaScript -->
       </div>
 
       <!-- Stats -->
@@ -250,12 +252,6 @@
         <div class="stats-item"><span class="stats-num" style="color:#f2cc8f">13</span><span class="stats-lbl">Hotel</span></div>
       </div>
     </div>
-
-    <!-- === AGGIUNTA: IL CONTENITORE DEL COUNTDOWN === -->
-      <div class="countdown-header"> Let's Go ✈️</div>
-      <div id="countdown-container" class="countdown-wrapper">
-        <!-- Verrà popolato dinamicamente da JavaScript -->
-      </div>
 
     <!-- ITINERARY -->
     <div id="panel-itinerary" style="display:none">
