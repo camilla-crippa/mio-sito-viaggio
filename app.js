@@ -96,7 +96,27 @@ function switchTab(tab) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// No countdown in public version
+// ==================== COUNTDOWN ====================
+// Imposta qui la data e l'ora esatta della partenza del viaggio (Formato: YYYY-MM-DDTHH:mm:ss)
+const targetDate = new Date('2026-08-06T08:55:00').getTime();
+
+function initCountdown() {
+  const container = document.getElementById('countdown-container');
+  if (!container) return;
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) {
+      container.innerHTML = '<div class="countdown-finished">✈️ Il viaggio è iniziato! Buon divertimento negli USA! 🇺🇸</div>';
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 // ==================== PHASE PILLS ====================
 function renderPhasePills() {
