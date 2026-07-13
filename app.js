@@ -203,6 +203,7 @@ function selectDay(idxStr) {
   selectDayByIdx(idx);
 }
 
+// ==================== DAY DETAIL ====================
 function selectDayByIdx(idx) {
   var d = itineraryData[idx];
   if (!d) return;
@@ -211,7 +212,6 @@ function selectDayByIdx(idx) {
   if (!area) return;
 
   var color = phaseColors[d.phaseId] || '#3d405b';
-
   var photo = dayPhotos[d.day] || '';
 
   var html = '<button class="day-back-btn" onclick="backToDayGrid()">‹ Torna ai giorni</button>';
@@ -366,13 +366,11 @@ function renderDayContent(d) {
   // Bonus stops
   var bonusItems = '';
   if (d.bonus) {
-    // Ho ridotto il font-size dei singoli elementi a 11px e impostato l'interlinea (line-height)
     d.bonus.forEach(function(b) { 
       bonusItems += '<div style="padding:3px 0; font-size:11px; line-height:1.35;">📌 ' + b + '</div>'; 
     });
   }
   if (bonusItems) {
-    // Ho aggiunto "grid-column: span 2; width: 100%;" per farlo allargare a tutta pagina
     html += '<div class="food-box" style="margin-top:8px; background:#fff9e6; border:1px solid #e8d9a0; font-size:11px; grid-column: span 2; width: 100%;">' +
               '<div class="food-title" style="font-size:11px; font-weight:700; margin-bottom:4px;">📍 Da non perdere</div>' + 
               bonusItems + 
@@ -393,8 +391,6 @@ function renderDayContent(d) {
   return html;
 }
 
-// No checklist in public version
-
 // ==================== MAP ====================
 var mapStops = [
   { day: 1, label: "Los Angeles", lat: 34.0850, lng: -118.3510, phase: "phase1" },
@@ -413,11 +409,6 @@ var mapStops = [
   { day: 14, label: "San Francisco", lat: 37.7576928, lng: -122.4788853, phase: "phase5" },
   { day: 15, label: "Redondo Beach", lat: 33.8546271, lng: -118.4526333, phase: "phase5" },
   { day: 16, label: "LAX Aeroporto", lat: 33.9432174, lng: -118.4099442, phase: "phase5" }
-
-  //{ day: 17, label: "Sausalito", lat: 37.8591, lng: -122.4853, phase: "phase5" },
-  //{ day: 18, label: "SF: Lombard St", lat: 37.8021, lng: -122.4194, phase: "phase5" },
-  //{ day: 19, label: "Alcatraz Island", lat: 37.8267, lng: -122.4230, phase: "phase5" },
-  //{ day: 20, label: "SFO Aeroporto", lat: 37.6213, lng: -122.3790, phase: "phase5" }
 ];
 
 function initMap() {
@@ -473,7 +464,6 @@ function initMap() {
   }
 }
 
-// ==================== INIT ====================
 // ==================== HERO MAP ====================
 function initHeroMap() {
   var heroEl = document.getElementById('hero-map');
@@ -523,6 +513,39 @@ function initHeroMap() {
   }
 }
 
+// ==================== COUNTDOWN ====================
+// Imposta qui la data e l'ora esatta della partenza (Formato: YYYY-MM-DDTHH:mm:ss)
+const targetDate = new Date('2026-08-06T08:55:00').getTime();
+
+function initCountdown() {
+  var container = document.getElementById('countdown-container');
+  if (!container) return;
+
+  function updateCountdown() {
+    var now = new Date().getTime();
+    var distance = targetDate - now;
+
+    if (distance < 0) {
+      container.innerHTML = '<div class="countdown-finished">✈️ Il viaggio è iniziato! Buon divertimento negli USA! 🇺🇸</div>';
+      return;
+    }
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    container.innerHTML = 
+      '<div class="countdown-item"><div class="countdown-number">' + days + '</div><div class="countdown-label">Giorni</div></div>' +
+      '<div class="countdown-item"><div class="countdown-number">' + hours + '</div><div class="countdown-label">Ore</div></div>' +
+      '<div class="countdown-item"><div class="countdown-number">' + minutes + '</div><div class="countdown-label">Minuti</div></div>' +
+      '<div class="countdown-item"><div class="countdown-number">' + seconds + '</div><div class="countdown-label">Secondi</div></div>';
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+}
+
 // ==================== INIT ====================
 document.addEventListener('DOMContentLoaded', function() {
   switchTab('home');
@@ -530,4 +553,5 @@ document.addEventListener('DOMContentLoaded', function() {
   renderPhasePills();
   renderDayGrid();
   initHeroMap();
+  initCountdown(); 
 });

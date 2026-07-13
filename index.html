@@ -48,6 +48,55 @@
     .home-phase-sub{font-size:0.7rem;color:#888}
     .home-phase-arrow{color:#ccc;font-size:1.2rem}
     
+    /* === NUOVI STILI CSS PER IL COUNTDOWN === */
+    .countdown-wrapper {
+      display: flex;
+      justify-content: center; /* Centra gli elementi */
+      gap: 20px;               /* Spazio tra i blocchi */
+      align-items: center;
+      background: transparent; /* Rende lo sfondo trasparente */
+      border: none;            /* Elimina il bordo */
+      box-shadow: none;        /* Elimina l'ombra */
+      padding: 4px 0;          /* Riduce lo spazio verticale */
+      margin-bottom: 24px;     /* Mantiene la distanza dagli elementi sotto */
+    }
+    .countdown-header {
+      font-size: 14px;
+      font-weight: 700;
+      color: #3d405b;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 16px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .countdown-item {
+      text-align: center;
+      min-width: 60px; 
+    }
+    .countdown-number {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #eb8110;
+      line-height: 1.1;
+    }
+    .countdown-label {
+      font-size: 8px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #aaa;
+      letter-spacing: 0.5px;
+      margin-top: 3px;
+    }
+    .countdown-finished {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      color: #81b29a;
+      padding: 4px 0;
+    }
+    
     /* Phase pills */
     .phase-pills{display:flex;gap:6px;overflow-x:auto;padding:0 12px 8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
     .phase-pills::-webkit-scrollbar{display:none}
@@ -164,7 +213,7 @@
       <button class="tab-btn active" id="tab-home" onclick="switchTab('home')">🏠<br>Home</button>
       <button class="tab-btn" id="tab-itinerary" onclick="switchTab('itinerary')">📋<br>Itinerario</button>
       <button class="tab-btn" id="tab-map" onclick="switchTab('map')">🗺️<br>Mappa</button>
-      <button class="tab-btn" id="tab-info" onclick="switchTab('info')">✈️<br>Info</button>
+      <button class="tab-btn" id="tab-info" onclick="switchTab('info')">ℹ️<br>Info</button>
     </div>
   </div>
 
@@ -182,15 +231,21 @@
         </p>
       </div>
 
+      <!-- === AGGIUNTA: IL CONTENITORE DEL COUNTDOWN === -->
+      <div class="countdown-header"> Let's Go ✈️</div>
+      <div id="countdown-container" class="countdown-wrapper">
+        <!-- Verrà popolato dinamicamente da JavaScript -->
+      </div>
+
       <!-- Stats -->
       <div class="stats-bar">
-        <div class="stats-item"><span class="stats-num" style="color:#e07a5f">16</span><span class="stats-lbl">Giorni</span></div>
+        <div class="stats-item"><span class="stats-num" style="color:#6b9bb0">16</span><span class="stats-lbl">Giorni</span></div>
         <div class="stats-divider"></div>
         <div class="stats-item"><span class="stats-num" style="color:#3d405b">4.100</span><span class="stats-lbl">Km</span></div>
         <div class="stats-divider"></div>
-        <div class="stats-item"><span class="stats-num" style="color:#81b29a">4</span><span class="stats-lbl">Stati</span></div>
+        <div class="stats-item"><span class="stats-num" style="color:#66b58f">4</span><span class="stats-lbl">Stati</span></div>
         <div class="stats-divider"></div>
-        <div class="stats-item"><span class="stats-num" style="color:#e07a5f">8</span><span class="stats-lbl">Parchi</span></div>
+        <div class="stats-item"><span class="stats-num" style="color:#417738">8</span><span class="stats-lbl">Parchi</span></div>
         <div class="stats-divider"></div>
         <div class="stats-item"><span class="stats-num" style="color:#f2cc8f">13</span><span class="stats-lbl">Hotel</span></div>
       </div>
@@ -262,7 +317,7 @@
     <button class="nav-btn active" id="nav-home" onclick="switchTab('home')"><span class="nav-icon">🏠</span>Home</button>
     <button class="nav-btn" id="nav-itinerary" onclick="switchTab('itinerary')"><span class="nav-icon">📋</span>Itinerario</button>
     <button class="nav-btn" id="nav-map" onclick="switchTab('map')"><span class="nav-icon">🗺️</span>Mappa</button>
-    <button class="nav-btn" id="nav-info" onclick="switchTab('info')"><span class="nav-icon">✈️</span>Info</button>
+    <button class="nav-btn" id="nav-info" onclick="switchTab('info')"><span class="nav-icon">ℹ️</span>Info</button>
   </nav>
 
   <script src="itinerary-data.js?v=20260603p"></script>
