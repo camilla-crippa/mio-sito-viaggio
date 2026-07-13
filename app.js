@@ -96,37 +96,6 @@ function switchTab(tab) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ==================== COUNTDOWN ====================
-// Imposta qui la data e l'ora esatta della partenza del viaggio (Formato: YYYY-MM-DDTHH:mm:ss)
-const targetDate = new Date('2026-08-06T08:55:00').getTime();
-
-function initCountdown() {
-  const container = document.getElementById('countdown-container');
-  if (!container) return;
-
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
-
-    if (distance < 0) {
-      container.innerHTML = '<div class="countdown-finished">✈️ Il viaggio è iniziato! Buon divertimento negli USA! 🇺🇸</div>';
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    container.innerHTML = '<div class="countdown-item"><div class="countdown-number">' + days + '</div><div class="countdown-label">Giorni</div></div>' +
-                          '<div class="countdown-item"><div class="countdown-number">' + hours + '</div><div class="countdown-label">Ore</div></div>' +
-                          '<div class="countdown-item"><div class="countdown-number">' + minutes + '</div><div class="countdown-label">Minuti</div></div>' +
-                          '<div class="countdown-item"><div class="countdown-number">' + seconds + '</div><div class="countdown-label">Secondi</div></div>';
-  }
-
-  updateCountdown();
-  setInterval(updateCountdown, 1000);
-}
 
 // ==================== PHASE PILLS ====================
 function renderPhasePills() {
